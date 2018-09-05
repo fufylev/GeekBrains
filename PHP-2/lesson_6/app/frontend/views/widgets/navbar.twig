@@ -1,0 +1,181 @@
+<header class="top-header">
+    <div class="top-header-content container">
+        <div class="top-header-left">
+            <a href="/" class="logo">
+                <img src="/assets/img/logo.png" alt="logo" class="logo__pic">
+                <span class="logo__text">BRAN<span class="logo__text logo__text_pink">D</span></span>
+            </a>
+            <div class="search">
+                <details class="search__browse">
+                    <summary class="search__popup">Browse</summary>
+                    <div class="drop-menu drop-menu_search">
+                        <div class="drop-menu__arrow drop-menu__arrow_search"></div>
+                        <div class="drop-menu__flex">
+                            <h3 class="drop-menu__headline">Women</h3>
+                            <ul class="drop-menu__list">
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Dresses</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Tops</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Sweaters/Knits</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Jackets/Coats</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Blazers</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Denim</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Leggings/Pants</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Skirts/Shorts</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Accessories</a></li>
+                            </ul>
+                            <h3 class="drop-menu__headline">Men</h3>
+                            <ul class="drop-menu__list">
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Tees/Tank tops</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Shirts/Polos</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Sweaters</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">JSweatshirts/Hoodies</a>
+                                </li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Blazers</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Jackets/vests</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </details>
+                <form action="#" class="search__form">
+                    <input type="search" placeholder="Search for Item..." class="search__text"/>
+                    <button value="" name="hidden" type="submit" class="search__button"><img
+                                src="/assets/img/search-button.png"
+                                alt="search">
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="top-header-right">
+
+            <!--Create a miniCart-->
+            <div class="mini_basket">
+                <div class="cart">
+                    <p class="cart__qnt"></p>
+                </div>
+                <div class="drop-menu drop-menu_cart" id="cart-drop">
+                    <div class="drop-menu__arrow drop-menu__arrow_cart"></div>
+                    <div class="drop-menu__flex drop-menu__flex-cart nicescroll-box">
+
+                    </div>
+                </div>
+            </div>
+            <!--End of a miniCart-->
+
+            <details class="my-account">
+                <summary class="my-account__text">My Account</summary>
+                {#<form action="./auth.php" method="POST" class="my-account__form">
+                    login
+                    <input type="text" name="login" value=""><br>
+                    password
+                    <input type="password" name="pass" value=""><br>
+                    <input type="checkbox" name="check"> Remember<br>
+                    <input type="submit" name="submit" value="Enter"><br>
+                </form>#}
+                <form action="/user/login/" method="POST" class="my-account__form">
+
+                    <div class="form-group">
+                        <label for="loginInput">User login</label>
+                        <input type="text"
+                               name="User[login]"
+                               value="{{ model.login }}"
+                               class="form-control"
+                               id="loginInput"
+                               autocomplete="off"
+                               placeholder="Your login">
+                        <small id="loginHelp" class="form-text text-danger">{{ model.errors.login }}</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="passwordInput">Password</label>
+                        <input type="password"
+                               name="User[password]"
+                               value="{{ model.password }}"
+                               class="form-control"
+                               id="passwordInput"
+                               placeholder="Your password">
+                        <small id="passwordHelp" class="form-text text-danger">{{ model.errors.password }}</small>
+                    </div>
+                    <input type="checkbox" name="check"> Remember<br>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary mb-2">Enter</button>
+                    </div>
+                </form>
+            </details>
+        </div>
+    </div>
+</header>
+<nav class="top-menu">
+    <ul class="top-menu__list">
+        <li class="top-menu__item"><a href="/" class="top-menu__link">Home</a></li>
+        <li class="top-menu__item"><a href="#"
+                                      class="top-menu__link top-menu__link_current-page">Man</a>
+            <div class="drop-menu">
+                <div class="drop-menu__arrow  drop-menu__arrow_man"></div>
+                <div class="drop-menu__flex">
+                    <h3 class="drop-menu__headline">MAN</h3>
+                    <ul class="drop-menu__list">
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Dresses</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Tops</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Sweaters/Knits</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Jackets/Coats</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Blazers</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Denim</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Leggings/Pants</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Skirts/Shorts</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Accessories</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Bags/Purses</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="drop-menu__flex">
+                    <h3 class="drop-menu__headline">MEN</h3>
+                    <ul class="drop-menu__list">
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Swimwear/Underwear</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Nightwear</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Shoes</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Polos</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Sweaters & Knits</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">T-Shirts</a></li>
+                    </ul>
+                    <img src="/assets/img/poster-menu-men.png" alt="men" class="drop-menu__pic"></div>
+            </div>
+        </li>
+        <li class="top-menu__item"><a href="women.php" class="top-menu__link">Women</a>
+            <div class="drop-menu">
+                <div class="drop-menu__arrow drop-menu__arrow_women"></div>
+                <div class="drop-menu__flex">
+                    <h3 class="drop-menu__headline">Women</h3>
+                    <ul class="drop-menu__list">
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Dresses</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Tops</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Sweaters/Knits</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Jackets/Coats</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Blazers</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Denim</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Leggings/Pants</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Skirts/Shorts</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Accessories</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Bags/Purses</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="drop-menu__flex">
+                    <h3 class="drop-menu__headline">Women</h3>
+                    <ul class="drop-menu__list">
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Swimwear/Underwear</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Nightwear</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Shoes</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Polos</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">Sweaters & Knits</a></li>
+                        <li class="drop-menu__item"><a href="#" class="drop-menu__link">T-Shirts</a></li>
+                    </ul>
+                    <img src="img/poster-menu-women.png" alt="men" class="drop-menu__pic"></div>
+            </div>
+        </li>
+        <li class="top-menu__item"><a href="#" class="top-menu__link">Kids</a></li>
+        <li class="top-menu__item"><a href="#" class="top-menu__link">Accoseriese</a></li>
+        <li class="top-menu__item"><a href="#" class="top-menu__link">Featured</a></li>
+        <li class="top-menu__item"><a href="#" class="top-menu__link">Hot Deals</a></li>
+
+    </ul>
+</nav>

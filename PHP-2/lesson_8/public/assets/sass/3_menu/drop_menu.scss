@@ -1,0 +1,97 @@
+$color-pink: #f16d7f;
+
+.bascket_container {
+  max-height: 355px;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+.drop-menu {
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: 1px solid #e8e8e8;
+  position: absolute;
+  z-index: 99;
+  padding: 20px;
+  display: none;
+  top: 50px;
+  &_search {
+    top: 39px;
+  }
+  &_cart {
+    position: absolute;
+    top: 60px;
+    /*right: 290px;*/
+    display: none;
+    //visibility: hidden;
+    //transition: all 0.7s ease-out;
+
+  }
+  &__arrow {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    top: -11px;
+    transform: rotate(45deg);
+    border-top: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+    &_cart {
+      left: 7px;
+      top: -10px;
+      width: 15px;
+      height: 15px;
+    }
+    &_man {
+      left: 32px;
+    }
+    &_women {
+      left: 45px;
+    }
+    &_search {
+      left: 61px;
+    }
+  }
+  &__flex {
+    width: 267px;
+    margin-right: 45px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &-cart {
+      margin-right: 0px;
+    }
+  }
+  &__headline {
+    color: #232323;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.35px;
+    border-bottom: 2px solid #e8e8e8;
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+  }
+  &__list {
+    margin-left: 8px;
+  }
+  &__item {
+    &_last {
+      margin-bottom: 15px;
+    }
+  }
+  &__link {
+    color: #646464;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.35px;
+    text-decoration: none;
+    &:hover {
+      color: $color-pink;
+    }
+  }
+  &__pic {
+    margin-top: 15px;
+    max-width: 237px;
+  }
+}

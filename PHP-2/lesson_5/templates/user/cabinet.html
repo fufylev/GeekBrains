@@ -1,0 +1,13 @@
+{% include 'header.html' %}
+
+<div class="cabinet">
+  <h1>ВЫ АВТОРИЗОВАНЫ</h1>
+  <div class="col-sm-4 col-md-2 col-md-offset-2">
+    <form action="/user/logout/" method="POST">
+      <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Выход</button>
+    </form>
+  </div>
+</div>
+
+
+{% include 'footer.html' %}

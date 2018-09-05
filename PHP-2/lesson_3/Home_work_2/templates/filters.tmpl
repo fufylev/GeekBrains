@@ -1,0 +1,28 @@
+<html>
+  <head></head>
+  <body>
+  {{ "now"|date("d M Y h:i")  }} <br/>
+  {{ "now"|date("d/m/y")  }}<br/><br/>
+
+  {{ "the cow jumped over the moon"|upper  }} <br/>
+  {{ "the cow jumped over the moon"|capitalize  }} <br/>
+  {{ "the cow jumped over the moon"|title  }} <br/>
+  {{ "The Cow jumped over the Moon"|lower  }} <br/><br/>
+
+  {{ "<div>I said \"<b>Go away!</b>\"</div>"|striptags  }} <br/><br/>
+
+  {{ "I want a red boat"|replace({"red" : "yellow", "boat" : "sports car"})  }} <br/><br/>
+
+  Escaped output: {{ html|escape }} <br/><br/>
+  
+  Raw output: {{ html|raw }} <br/><br/>
+
+  {% autoescape true %}
+  Escaped output: {{ html }} <br/><br/>
+  {% endautoescape %}  
+  
+  {% autoescape false %}
+  Raw output: {{ html }} 
+  {% endautoescape %}  
+  </body>
+</html>

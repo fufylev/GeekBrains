@@ -1,0 +1,112 @@
+.check-out {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 33px 0;
+  border-bottom: 1px solid #eaeaea;
+  &_opened {
+    padding-bottom: 80px;
+  }
+  &__type {
+    width: 1100px;
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  &__content {
+    width: 530px;
+    margin-left: 35px;
+  }
+  &__heading {
+    color: #222222;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  &__text {
+    color: #b3b2b2;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 15px;
+    &_bt {
+      margin-bottom: 33px;
+    }
+    &_red {
+      display: block;
+      color: #ff0d0d;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 20px;
+      margin: -10px 0 23px 0;
+    }
+  }
+  &__form {
+    margin: 34px 0;
+  }
+  &__label {
+    display: block;
+    color: #222222;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  &__email, &__pw {
+    width: 390px;
+    height: 45px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    color: #b3b2b2;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 0 12px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 50px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 1s ease-out;
+    &:hover {
+      background: #f16d7f;
+      color: white;
+    }
+  }
+  &__sign {
+    display: block;
+    color: #222222;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  &__star {
+    color: #ff0d0d;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  &__forget {
+    color: #222222;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-left: 30px;
+  }
+  &__login {
+    display: flex;
+    align-items: center;
+  }
+
+}

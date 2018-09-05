@@ -1,0 +1,15 @@
+{
+  "name": "andreyfufylev/mvc_3.0",
+  "description": "Project on MVC V3.0",
+  "type": "project",
+  "require": {
+    "twig/twig": "^2.4"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "fufylev",
+      "email": "fufylev@gmail.com"
+    }
+  ]
+}

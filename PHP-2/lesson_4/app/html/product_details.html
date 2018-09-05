@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>THE BRAND OF LUXERIOUS FASHION</title>
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="js/slick/slick.css"/>
+  <link rel="stylesheet" href="js/slick/slick-theme.css"/>
+
+  <link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css">
+  <link rel="stylesheet" href="js/jquery-ui/jquery-ui.structure.min.css">
+  <link rel="stylesheet" href="js/jquery-ui/jquery-ui.theme.min.css">
+
+  <script src="js/jquery/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui/jquery-ui.min.js"></script>
+  <script src="js/slick/slick.min.js"></script>
+
+  <script defer src="js/font-awesome/fontawesome-all.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    if (!('open' in document.createElement('details'))) {
+      alert("Браузер не поддерживает HTML5 details");
+    }
+  </script>
+  <!--[if IE]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<header class="top-header">
+  <div class="top-header-content container">
+    <div class="top-header-left">
+      <a href="index.php" class="logo">
+        <img src="img/logo.png" alt="logo" class="logo__pic">
+        <span class="logo__text">BRAN<span class="logo__text logo__text_pink">D</span></span>
+      </a>
+      <div class="search">
+        <details class="search__browse">
+          <summary class="search__popup">Browse</summary>
+          <div class="drop-menu drop-menu_search">
+            <div class="drop-menu__arrow drop-menu__arrow_search"></div>
+            <div class="drop-menu__flex">
+              <h3 class="drop-menu__headline">Women</h3>
+              <ul class="drop-menu__list">
+                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Dresses</a></li>
+                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Tops</a></li>
+                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Sweaters/Knits</a></li>
+                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Jackets/Coats</a></li>
+                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Blazers</a></li>
+                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Denim</a></li>
+                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Leggings/Pants</a></li>
+                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Skirts/Shorts</a></li>
+                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Accessories</a></li>
+              </ul>
+              <h3 class="drop-menu__headline">Men</h3>
+              <ul class="drop-menu__list">
+                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Tees/Tank tops</a></li>
+                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Shirts/Polos</a></li>
+                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Sweaters</a></li>
+                <li class="drop-menu__item"><a href="#" class="drop-menu__link">JSweatshirts/Hoodies</a>
+                </li>
+                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Blazers</a></li>
+                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Jackets/vests</a></li>
+              </ul>
+            </div>
+          </div>
+        </details>
+        <form action="#" class="search__form">
+          <input type="search" placeholder="Search for Item..." class="search__text"/>
+          <button value="" name="hidden" type="submit" class="search__button"><img src="img/search-button.png"
+                                                                                   alt="search">
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="top-header-right">
+      <!--Create a miniCart-->
+      <div class="mini_basket">
+        <div class="cart">
+          <p class="cart__qnt"></p>
+        </div>
+        <div class="drop-menu drop-menu_cart" id="cart-drop">
+          <div class="drop-menu__arrow drop-menu__arrow_cart"></div>
+          <div class="drop-menu__flex drop-menu__flex-cart">
+
+          </div>
+        </div>
+      </div>
+      <!--End of a miniCart-->
+      <details class="my-account">
+        <summary class="my-account__text">My Account</summary>
+        <form action="./auth.php" method="POST" class="my-account__form">
+          login
+          <input type="text" name="login" value=""><br>
+          password
+          <input type="password" name="pass" value=""><br>
+          <input type="checkbox" name="check"> Remember<br>
+          <input type="submit" name="submit" value="Enter"><br>
+        </form>
+      </details>
+    </div>
+  </div>
+</header>
+<nav class="top-menu">
+  <ul class="top-menu__list">
+    <li class="top-menu__item"><a href="index.php" class="top-menu__link">Home</a></li>
+    <li class="top-menu__item"><a href="man.php" class="top-menu__link">Man</a>
+      <div class="drop-menu">
+        <div class="drop-menu__arrow drop-menu__arrow_man"></div>
+        <div class="drop-menu__flex">
+          <h3 class="drop-menu__headline">MAN</h3>
+          <ul class="drop-menu__list">
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Dresses</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Tops</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Sweaters/Knits</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Jackets/Coats</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Blazers</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Denim</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Leggings/Pants</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Skirts/Shorts</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Accessories</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Bags/Purses</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Accessories</a></li>
+          </ul>
+        </div>
+        <div class="drop-menu__flex">
+          <h3 class="drop-menu__headline">MEN</h3>
+          <ul class="drop-menu__list">
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Swimwear/Underwear</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Nightwear</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Shoes</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Polos</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Sweaters & Knits</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">T-Shirts</a></li>
+          </ul>
+          <img src="img/poster-menu-men.png" alt="men" class="drop-menu__pic"></div>
+      </div>
+    </li>
+    <li class="top-menu__item"><a href="women.php" class="top-menu__link">Women</a>
+      <div class="drop-menu">
+        <div class="drop-menu__arrow drop-menu__arrow_women"></div>
+        <div class="drop-menu__flex">
+          <h3 class="drop-menu__headline">Women</h3>
+          <ul class="drop-menu__list">
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Dresses</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Tops</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Sweaters/Knits</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Jackets/Coats</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Blazers</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Denim</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Leggings/Pants</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Skirts/Shorts</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Accessories</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Bags/Purses</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Accessories</a></li>
+          </ul>
+        </div>
+        <div class="drop-menu__flex">
+          <h3 class="drop-menu__headline">Women</h3>
+          <ul class="drop-menu__list">
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Swimwear/Underwear</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Nightwear</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Shoes</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Polos</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">Sweaters & Knits</a></li>
+            <li class="drop-menu__item"><a href="#" class="drop-menu__link">T-Shirts</a></li>
+          </ul>
+          <img src="img/poster-menu-women.png" alt="men" class="drop-menu__pic"></div>
+      </div>
+    </li>
+    <li class="top-menu__item"><a href="#" class="top-menu__link">Kids</a></li>
+    <li class="top-menu__item"><a href="#" class="top-menu__link">Accoseriese</a></li>
+    <li class="top-menu__item"><a href="#" class="top-menu__link">Featured</a></li>
+    <li class="top-menu__item"><a href="#" class="top-menu__link">Hot Deals</a></li>
+  </ul>
+</nav>
+<nav class="breadcrumbs">
+  <div class="breadcrumbs__container">
+    <div class="breadcrumbs__left">{{PRODUCT_NAME}}</div>
+    <div class="breadcrumbs__right">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item"><a href="index.php" class="breadcrumbs__link">Home</a>&#160;/&#160;</li>
+        <li class="breadcrumbs__item"><a href="man.php" class="breadcrumbs__link">Men</a>&#160;/&#160;
+        </li>
+        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link breadcrumbs__link_current">New
+          Arrivals</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main class="women">
+  <div class="central-poster">
+    <div class="slider">
+      <div class="slide">
+        <img src="img/prod-{{ID}}.png" alt="central poster" class="central-poster__pic">
+      </div>
+      <!--<div class="slide">
+        <img src="img/prod-{{ID}}.png" alt="central poster" class="central-poster__pic">
+      </div>
+      <div class="slide">
+        <img src="img/prod-{{ID}}.png" alt="central poster" class="central-poster__pic">
+      </div>
+      <div class="slide">
+        <img src="img/prod-{{ID}}.png" alt="central poster" class="central-poster__pic">
+      </div>-->
+    </div>
+    <div class="central-poster__btnLeft" id="btnLeft"><i class="fas fa-angle-left"></i></div>
+    <div class="central-poster__btnRight" id="btnRight"><i class="fas fa-angle-right"></i></div>
+  </div>
+  <section class="women-collection container">
+    <article class="women-collection__content">
+      <h2 class="women-collection__headline">{{GENDER}} COLLECTION</h2>
+      <p class="women-collection__line"><img src="img/underline.png" alt="underline"
+                                             class="women-collection__underline"></p>
+      <h3 class="women-collection__brand-name">{{PRODUCT_NAME}}</h3>
+      <div class="women-collection__tagline">
+        <p class="women-collection__desc">{{PRODUCT_LONG_DESCRIPTION}}</p> <span
+        class="women-collection__material">MATERIAL: &#160;<span
+        class="women-collection__value">{{MATERIAL}}</span></span> <span
+        class="women-collection__designer">DESIGNER: &#160;<span
+        class="women-collection__value">{{DESIGNER}}</span></span>
+        <p class="women-collection__price">${{PRICE}}.00</p>
+      </div>
+    </article>
+    <article class="options-selection">
+      <label class="options-selection__type">CHOOSE COLOR
+        <br>
+        <select class="options-selection__color">
+          <option value="Red">Red</option>
+          <option value="Blue">Blue</option>
+          <option value="Black">Black</option>
+          <option value="White">White</option>
+        </select>
+      </label>
+      <label class="options-selection__type">CHOOSE SIZE
+        <br>
+        <select class="options-selection__value">
+          <option value="XXL">XXL</option>
+          <option value="XL">XL</option>
+        </select>
+      </label>
+      <label class="options-selection__type">QUANTITY
+        <br>
+        <input class="options-selection__value" type="number" required min="1" max="1000" placeholder="2">
+      </label>
+    </article>
+    <div class="addToCart">
+      <form action="#" class="addToCart__form">
+        <p class="addToCart__inner">
+          <button class="addToCart__btn" name="send" type="submit" value="ОК"><img src="img/cart-pink.png"
+                                                                                   alt="cart-pink"
+                                                                                   class="addToCart__pink-icon">Add to
+            Cart
+          </button>
+        </p>
+      </form>
+    </div>
+  </section>
+  <section class="product-cards">
+    <h2 class="product-cards__caption">you may like also</h2>
+    <div class="product-cards__content my-slider">
+      {{GOODS}}
+    </div>
+  </section>
+</main>
+<div class="subscribe">
+  <div class="subscribe-bg">
+    <div class="subscribe-left"><img src="img/face.png" alt="face" class="subscribe-left__pic">
+      <h2 class="subscribe-left__quote">"Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+        purus condimentum a. Aliquam
+        condimentum mattis neque sed pretium"</h2>
+      <h3 class="subscribe-left__author">Bin Burhan</h3>
+      <h4 class="subscribe-left__place">Dhaka, Bd</h4>
+    </div>
+    <div class="subscribe-right">
+      <div class="subscribe-right__content">
+        <h2 class="subscribe-right__headline">Subscribe</h2>
+        <h3 class="subscribe-right__headline-sl">FOR OUR NEWLETTER AND PROMOTION</h3>
+        <form action="#" class="subscribe-right__form">
+          <input name="email" type="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+                 placeholder="Enter Your Email" required class="subscribe-right__email">
+          <input name="submit" type="submit" value="Subscribe" class="subscribe-right__submit">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bottom-menu container">
+  <div class="bottom-menu-1">
+    <a href="index.php" class="logo">
+      <img src="img/logo.png" alt="logo" class="logo__pic">
+      <span class="logo__text">BRAN<span class="logo__text logo__text_pink">D</span></span>
+    </a>
+    <article>
+      <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally
+        syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded
+        array of processes and cross-unit partnerships.</p>
+      <br>
+      <p>Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior
+        initiatives for wireless technologies. Dynamically optimize. </p>
+    </article>
+  </div>
+  <div class="bottom-menu-2">
+    <article class="bottom-menu-col">
+      <h2>COMPANY</h2>
+      <p><a href="index.php">Home</a></p>
+      <p><a href="#">Shop</a></p>
+      <p><a href="#">About</a></p>
+      <p><a href="#">How It Works</a></p>
+      <p><a href="#">Contact</a></p>
+    </article>
+  </div>
+  <div class="bottom-menu-3">
+    <article class="bottom-menu-col">
+      <h2>INFORMATION</h2>
+      <p><a href="#">Tearms & Condition</a></p>
+      <p><a href="#">Privacy Policy</a></p>
+      <p><a href="#">How to Buy</a></p>
+      <p><a href="#">How to Sell</a></p>
+      <p><a href="#">Promotion</a></p>
+    </article>
+  </div>
+  <div class="bottom-menu-4">
+    <article class="bottom-menu-col">
+      <h2>SHOP CATEGORY</h2>
+      <p><a href="man.html">Men</a></p>
+      <p><a href="#">Women</a></p>
+      <p><a href="#">Child</a></p>
+      <p><a href="#">Apparel</a></p>
+      <p><a href="#">Brows All</a></p>
+    </article>
+  </div>
+</div>
+<footer>
+  <div class="footer-content container">
+    <div class="footer-left">© 2017 Brand All Rights Reserved</div>
+    <div class="footer-right">
+      <a href="#" class="footer-right__icon"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="footer-right__icon"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="footer-right__icon"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" class="footer-right__icon"><i class="fab fa-pinterest-p"></i></a>
+      <a href="#" class="footer-right__icon"><i class="fab fa-google-plus-g"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/goods_basket/product.details.page.init.js"></script>
+<!--<script src="js/goods_basket/product.cards.render.js"></script>-->
+<script src="js/goods_basket/basket.js"></script>
+<!--<script src="js/sliders/product_details_women.js"></script>-->
+<script src="js/sliders/slider.js"></script>
+
+</body>
+
+</html>

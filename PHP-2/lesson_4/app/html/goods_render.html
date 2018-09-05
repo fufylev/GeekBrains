@@ -1,0 +1,23 @@
+<div class="product-cards__box">
+  <!--рендер карточки товара-->
+  <a href="good_details.php?id={{ID}}" class="product-cards__link">
+    <img src="img/prod-{{ID}}.png" alt="pic{{ID}}}" class="product-cards__pic">
+    <h2 class="product-cards__name">{{NAME}}</h2>
+    <p class="product-cards__footer"><span class="product-cards__price">${{PRICE}}.00</span></p>
+  </a>
+  <!--контейнер для кнопок-->
+  <div class="product-cards__btns">
+    <!--код кнопки "Купить"-->
+    <button class="product-cards__cart-btn" data-id="{{ID}}"><img src="./img/add-to-cart.png" alt="cart"
+                                                                  class="product-cards__cart-icon">Add to Cart
+    </button>
+
+    <!--код кнопки "Обновить"-->
+    <button class="product-cards__reset-btn" data-id="{{ID}}"><img src="./img/arrow-rectangle.png" alt="reset"
+                                                                   class="product-cards__reset-icon"></button>
+
+    <!--код кнопки "Лайк"-->
+    <button class="product-cards__like-btn" data-id="{{ID}}"><img src="./img/heart.png" alt="like"
+                                                                  class="product-cards__like-icon"></button>
+  </div>
+</div>

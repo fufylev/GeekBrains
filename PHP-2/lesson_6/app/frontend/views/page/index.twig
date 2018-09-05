@@ -1,0 +1,7 @@
+<h1>Pages</h1>
+
+<ul>
+    {% for page in pages %}
+        <li><a href="/page/view?id={{ page.id }}">{{ page.title }}</a></li>
+    {% endfor %}
+</ul>

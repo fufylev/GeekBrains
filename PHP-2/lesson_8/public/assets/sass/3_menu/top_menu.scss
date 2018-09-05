@@ -1,0 +1,37 @@
+$color-pink: #f16d7f;
+
+.top-menu {
+  position: relative;
+  z-index: 98;
+  background-color: #ffffff;
+  &__item {
+    position: relative;
+  }
+  &__list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    & > li:hover .drop-menu {
+      display: flex;
+    }
+  }
+  &__link {
+    position: relative;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 14px 25px 17px 19px;
+    display: block;
+    &:hover {
+      color: $color-pink;
+    }
+    &_current-page {
+      border-bottom: 3px solid $color-pink;
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+}
+

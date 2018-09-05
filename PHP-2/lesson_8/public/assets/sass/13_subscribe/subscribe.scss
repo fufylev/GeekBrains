@@ -1,0 +1,105 @@
+/*style for subscribe form START*/
+.clear {
+  height: 97px;
+}
+.subscribe {
+  background: url(../img/subscribe-bg.png) no-repeat;
+}
+.subscribe-bg {
+  background: rgba(242, 242, 242, 0.5);
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.subscribe-left {
+  width: 800px;
+  min-height: 438px;
+  border-right: 1px solid white;
+  padding: 123px 73px 0 341px;
+  &__quote {
+    color: #222224;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 26px;
+    letter-spacing: 0.4px;
+  }
+  &__author {
+    color: #f16d7f;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    letter-spacing: 0.4px;
+  }
+  &__place {
+    color: #222224;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    text-align: left;
+    letter-spacing: 0.3px;
+  }
+  &__pic {
+    position: absolute;
+    top: 111px;
+    left: 230px;
+  }
+}
+.subscribe-right {
+  width: 799px;
+  min-height: 438px;
+  &__content {
+    padding: 148px 0 0 92px;
+    text-align: center;
+    width: 500px;
+  }
+  &__headline {
+    color: #222224;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+  }
+  &__headline-sl {
+    color: rgba(34, 34, 36, 0.67);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+  }
+  & input {
+    outline: 0;
+    box-shadow: none;
+  }
+  &__form {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__email {
+    width: 282px;
+    height: 46px;
+    border: 1px solid #eaeaea;
+    border-right: 0;
+    background-color: #ffffff;
+    color: #222224;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 0 22px;
+    border-bottom-left-radius: 23px;
+    border-top-left-radius: 23px;
+  }
+  &__submit {
+    outline: 0;
+    width: 104px;
+    height: 44px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 0 23px 23px 0;
+    background-color: #f16d7f;
+  }
+}
+/*style for subscribe form END*/

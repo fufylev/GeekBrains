@@ -1,0 +1,721 @@
+2016-07-26 15:49:47Executing "Command"
+
+2016-07-26 15:49:47I work as i can
+2016-07-26 15:49:47"Command": done
+
+2016-07-26 15:50:46Executing "Command"
+
+2016-07-26 18:50:46I work as i can
+2016-07-26 18:50:46"Command": done
+
+2016-07-26 18:51:01Executing "Command"
+
+2016-07-26 18:51:01I work as i can
+2016-07-26 18:51:01"Command": done
+
+2016-07-26 18:52:01Executing "fixture"
+
+2016-07-26 18:52:01I work as i can
+2016-07-26 18:52:01"fixture": done
+
+2016-07-26 18:52:13Executing "fixture"
+
+2016-07-26 18:52:13I work as i can
+2016-07-26 18:52:13"fixture": done
+
+2016-07-26 18:52:34Executing "fixture"
+2016-07-26 18:52:34I work as i can
+2016-07-26 18:52:34"fixture": done
+2016-07-26 19:00:32Executing "fixture"
+2016-07-26 19:00:32I work as i can
+2016-07-26 19:00:32"fixture": done
+2016-07-26 19:02:49Executing "fixture"
+2016-07-26 19:02:49I work as i can
+2016-07-26 19:02:49"fixture": finished with error
+2016-07-26 19:23:38Executing "fixture"
+2016-07-26 19:23:38Reading fixtures
+2016-07-26 19:23:38Unable to execute fixture: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2016-07-26 19:23:38"fixture": finished with error
+2016-07-26 19:23:56Executing "fixture"
+2016-07-26 19:23:56Reading fixtures
+2016-07-26 19:23:56Unable to execute fixture: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2016-07-26 19:23:56"fixture": finished with error
+2016-07-26 19:26:41Executing "fixture"
+2016-07-26 19:26:41Reading fixtures
+2016-07-26 19:26:41Added 100_pages.sql
+2016-07-26 19:26:41"fixture":  done
+2016-07-26 19:27:42Executing "fixture"
+2016-07-26 19:27:42Reading fixtures
+2016-07-26 19:27:42Unable to execute fixture: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UNSIGNED INT NOT NULL AUTO_INCREMENT,
+     name VARCHAR(256) NOT NULL,
+     PR' at line 2
+2016-07-26 19:27:42"fixture": finished with error
+2016-07-26 19:28:03Executing "fixture"
+2016-07-26 19:28:03Reading fixtures
+2016-07-26 19:28:03Unable to execute fixture: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2016-07-26 19:28:03"fixture": finished with error
+2016-07-26 19:28:34Executing "fixture"
+2016-07-26 19:28:34Reading fixtures
+2016-07-26 19:28:34Unable to execute fixture: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2016-07-26 19:28:34"fixture": finished with error
+2016-07-26 19:28:49Executing "fixture"
+2016-07-26 19:28:49Reading fixtures
+2016-07-26 19:28:49Added 100_pages.sql
+2016-07-26 19:28:49"fixture":  done
+2016-07-26 19:48:21Executing "fixture"
+2016-07-26 19:48:21Reading fixtures
+2016-07-26 19:48:21Unable to execute fixture: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'shop.fixtures' doesn't exist
+2016-07-26 19:48:21"fixture": finished with error
+2016-07-26 19:48:42Executing "fixture"
+2016-07-26 19:48:42Reading fixtures
+2016-07-26 19:48:42Unable to execute fixture: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2016-07-26 19:48:42"fixture": finished with error
+2016-07-26 19:49:28Executing "fixture"
+2016-07-26 19:49:28Reading fixtures
+2016-07-26 19:49:28Unable to execute fixture: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2016-07-26 19:49:28"fixture": finished with error
+2016-07-26 19:49:49Executing "fixture"
+2016-07-26 19:49:49Reading fixtures
+2016-07-26 19:49:49Unable to execute fixture: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+2016-07-26 19:49:49"fixture": finished with error
+2016-07-26 19:50:25Executing "fixture"
+2016-07-26 19:50:25Reading fixtures
+2016-07-26 19:50:25Added 100_pages.sql
+2016-07-26 19:50:25"fixture":  done
+2016-07-26 19:53:42Executing "cleantables"
+2016-07-26 19:53:42Cleaning tables
+2016-07-26 19:53:42"cleantables":  done
+2016-07-26 19:54:32Executing "cleantables"
+2016-07-26 19:54:32Cleaning tables
+2016-07-26 19:54:32"cleantables":  done
+2016-07-26 19:55:42Executing "cleantables"
+2016-07-26 19:55:42Cleaning tables
+2016-07-26 19:55:42"cleantables":  done
+2016-07-26 19:56:03Executing "cleantables"
+2016-07-26 19:56:03Cleaning tables
+2016-07-26 19:56:03Cleaning table pages
+2016-07-26 19:56:03Cleaning table shit
+2016-07-26 19:56:03"cleantables":  done
+2016-07-26 19:56:22Executing "cleantables"
+2016-07-26 19:56:22Cleaning tables
+2016-07-26 19:56:22Cleaning table pages
+2016-07-26 19:56:22Cleaning table shit
+2016-07-26 19:56:22"cleantables":  done
+2016-07-26 19:56:31Executing "cleantables"
+2016-07-26 19:56:31Cleaning tables
+2016-07-26 19:56:31Cleaning table pages
+2016-07-26 19:56:31Cleaning table shit
+2016-07-26 19:56:31"cleantables":  done
+2016-07-26 19:56:36Executing "fixture"
+2016-07-26 19:56:36Reading fixtures
+2016-07-26 19:56:36Added 100_pages.sql
+2016-07-26 19:56:36"fixture":  done
+2016-07-26 19:56:39Executing "cleantables"
+2016-07-26 19:56:39Cleaning tables
+2016-07-26 19:56:39Cleaning table pages
+2016-07-26 19:56:39Cleaning table shit
+2016-07-26 19:56:39"cleantables":  done
+2016-07-26 19:58:28Executing "cleantables"
+2016-07-26 19:58:28Cleaning tables
+2016-07-26 19:58:28Cleaning table pages
+2016-07-26 19:58:28Cleaning table shit
+2016-07-26 19:58:28"cleantables":  done
+2016-07-26 19:58:32Executing "cleantables"
+2016-07-26 19:58:32Cleaning tables
+2016-07-26 19:58:32Cleaning table shit
+2016-07-26 19:58:32"cleantables":  done
+2016-07-26 19:58:35Executing "cleantables"
+2016-07-26 19:58:35Cleaning tables
+2016-07-26 19:58:35Cleaning table pages
+2016-07-26 19:58:35"cleantables":  done
+2016-07-26 22:44:43Executing "fixture"
+2016-07-26 22:44:43Reading fixtures
+2016-07-26 22:44:43Added 100_pages.sql
+2016-07-26 22:44:43"fixture":  done
+2016-07-26 22:44:52Executing "fixture"
+2016-07-26 22:44:52Reading fixtures
+2016-07-26 22:44:52Added 100_pages.sql
+2016-07-26 22:44:52"fixture":  done
+2016-07-26 22:45:35Executing "fixture"
+2016-07-26 22:45:35Reading fixtures
+2016-07-26 22:45:35Added 100_pages.sql
+2016-07-26 22:45:35"fixture":  done
+2016-07-26 22:45:44Executing "fixture"
+2016-07-26 22:45:44Reading fixtures
+2016-07-26 22:45:44Added 100_pages.sql
+2016-07-26 22:45:44"fixture":  done
+2016-07-26 22:46:15Executing "fixture"
+2016-07-26 22:46:15Reading fixtures
+2016-07-26 22:46:15Added 100_pages.sql
+2016-07-26 22:46:15"fixture":  done
+2016-07-26 22:46:19Executing "fixture"
+2016-07-26 22:46:19Reading fixtures
+2016-07-26 22:46:19Added 100_pages.sql
+2016-07-26 22:46:20"fixture":  done
+2016-07-26 22:46:21Executing "fixture"
+2016-07-26 22:46:21Reading fixtures
+2016-07-26 22:46:21Added 100_pages.sql
+2016-07-26 22:46:21"fixture":  done
+2016-07-26 22:46:22Executing "fixture"
+2016-07-26 22:46:22Reading fixtures
+2016-07-26 22:46:22Added 100_pages.sql
+2016-07-26 22:46:22"fixture":  done
+2016-07-26 22:48:47Executing "fixture"
+2016-07-26 22:48:47Reading fixtures
+2016-07-26 22:48:47Added 100_pages.sql
+2016-07-26 22:48:47"fixture":  done
+2016-07-26 22:49:21Executing "fixture"
+2016-07-26 22:49:21Reading fixtures
+2016-07-26 22:49:21Added 100_pages.sql
+2016-07-26 22:49:21"fixture":  done
+2016-07-26 22:49:36Executing "fixture"
+2016-07-26 22:49:36Reading fixtures
+2016-07-26 22:49:36Added 100_pages.sql
+2016-07-26 22:49:36"fixture":  done
+2016-07-26 22:49:36Executing "fixture"
+2016-07-26 22:49:36Reading fixtures
+2016-07-26 22:49:36Added 100_pages.sql
+2016-07-26 22:49:36"fixture":  done
+2016-07-26 22:50:00Executing "fixture"
+2016-07-26 22:50:00Reading fixtures
+2016-07-26 22:50:00Added 100_pages.sql
+2016-07-26 22:50:00"fixture":  done
+2016-07-26 22:50:00Executing "fixture"
+2016-07-26 22:50:00Reading fixtures
+2016-07-26 22:50:00Added 100_pages.sql
+2016-07-26 22:50:00"fixture":  done
+2016-07-26 22:50:24Executing "fixture"
+2016-07-26 22:50:24Reading fixtures
+2016-07-26 22:50:24Added 100_pages.sql
+2016-07-26 22:50:24"fixture":  done
+2016-07-26 22:50:24Executing "fixture"
+2016-07-26 22:50:24Reading fixtures
+2016-07-26 22:50:24Added 100_pages.sql
+2016-07-26 22:50:24"fixture":  done
+2016-07-26 22:51:43Executing "fixture"
+2016-07-26 22:51:43Reading fixtures
+2016-07-26 22:51:43Added 100_pages.sql
+2016-07-26 22:51:43"fixture":  done
+2016-07-26 22:51:56Executing "fixture"
+2016-07-26 22:51:56Reading fixtures
+2016-07-26 22:51:56Added 100_pages.sql
+2016-07-26 22:51:56"fixture":  done
+2016-07-26 22:51:56Executing "fixture"
+2016-07-26 22:51:56Reading fixtures
+2016-07-26 22:51:56Added 100_pages.sql
+2016-07-26 22:51:56"fixture":  done
+2016-07-26 22:52:08Executing "fixture"
+2016-07-26 22:52:08Reading fixtures
+2016-07-26 22:52:08Added 100_pages.sql
+2016-07-26 22:52:08"fixture":  done
+2016-07-26 22:52:08Executing "fixture"
+2016-07-26 22:52:08Reading fixtures
+2016-07-26 22:52:08Added 100_pages.sql
+2016-07-26 22:52:08"fixture":  done
+2016-07-26 22:52:15Executing "fixture"
+2016-07-26 22:52:15Reading fixtures
+2016-07-26 22:52:15Added 100_pages.sql
+2016-07-26 22:52:15"fixture":  done
+2016-07-26 22:52:27Executing "fixture"
+2016-07-26 22:52:27Reading fixtures
+2016-07-26 22:52:27Added 100_pages.sql
+2016-07-26 22:52:27"fixture":  done
+2016-07-26 22:52:33Executing "fixture"
+2016-07-26 22:52:33Reading fixtures
+2016-07-26 22:52:33Added 100_pages.sql
+2016-07-26 22:52:33"fixture":  done
+2016-07-26 22:53:06Executing "fixture"
+2016-07-26 22:53:06Reading fixtures
+2016-07-26 22:53:06Added 100_pages.sql
+2016-07-26 22:53:06"fixture":  done
+2016-07-26 22:53:21Executing "fixture"
+2016-07-26 22:53:21Reading fixtures
+2016-07-26 22:53:21Added 100_pages.sql
+2016-07-26 22:53:21"fixture":  done
+2016-07-26 22:53:22Executing "fixture"
+2016-07-26 22:53:22Reading fixtures
+2016-07-26 22:53:22Added 100_pages.sql
+2016-07-26 22:53:22"fixture":  done
+2016-07-26 22:53:58Executing "fixture"
+2016-07-26 22:53:58Reading fixtures
+2016-07-26 22:53:58Added 100_pages.sql
+2016-07-26 22:53:58"fixture":  done
+2016-07-26 22:53:58Executing "fixture"
+2016-07-26 22:53:58Reading fixtures
+2016-07-26 22:53:58Added 100_pages.sql
+2016-07-26 22:53:58"fixture":  done
+2016-07-27 19:21:34Executing "fixture"
+2016-07-27 19:21:34Reading fixtures
+2016-07-27 19:21:34Added 100_pages.sql
+2016-07-27 19:21:34Added 200_categories.sql
+2016-07-27 19:21:34Added 300_goods.sql
+2016-07-27 19:21:34Added 400_orders.sql
+2016-07-27 19:21:34Added 500_cart.sql
+2016-07-27 19:21:34"fixture":  done
+2016-07-27 20:43:15Executing "generatemodel"
+2016-07-27 20:43:15Generating model
+2016-07-27 20:43:15Unable to execute generatemodel: Unable to load Shop
+2016-07-27 20:43:15"generatemodel": finished with error
+2016-07-27 20:44:01Executing "generatemodel"
+2016-07-27 20:44:01Generating model
+2016-07-27 20:44:01Unable to execute generatemodel: Unable to load Shop
+2016-07-27 20:44:01"generatemodel": finished with error
+2016-07-27 20:44:06Executing "generatemodel"
+2016-07-27 20:44:06Generating model
+2016-07-27 20:44:40Executing "generatemodel"
+2016-07-27 20:44:40Generating model
+2016-07-27 20:44:40Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '``' at line 1
+2016-07-27 20:44:40"generatemodel": finished with error
+2016-07-27 20:45:04Executing "generatemodel"
+2016-07-27 20:45:04Generating model
+2016-07-27 20:45:04Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '``' at line 1
+2016-07-27 20:45:04"generatemodel": finished with error
+2016-07-27 20:45:32Executing "generatemodel"
+2016-07-27 20:45:32Generating model
+2016-07-27 20:45:32Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`pages`' at line 1
+2016-07-27 20:45:32"generatemodel": finished with error
+2016-07-27 20:45:44Executing "generatemodel"
+2016-07-27 20:45:44Generating model
+2016-07-27 20:45:44Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'pages' at line 1
+2016-07-27 20:45:44"generatemodel": finished with error
+2016-07-27 20:46:22Executing "generatemodel"
+2016-07-27 20:46:22Generating model
+2016-07-27 20:46:22Unable to execute generatemodel: Table already exists
+2016-07-27 20:46:22"generatemodel": finished with error
+2016-07-27 20:46:41Executing "generatemodel"
+2016-07-27 20:46:41Generating model
+2016-07-27 20:46:41"generatemodel":  done
+2016-07-27 20:47:11Executing "generatemodel"
+2016-07-27 20:47:11Generating model
+2016-07-27 20:47:11"generatemodel":  done
+2016-07-27 20:47:20Executing "generatemodel"
+2016-07-27 20:47:20Generating model
+2016-07-27 20:47:20"generatemodel":  done
+2016-07-27 20:47:43Executing "generatemodel"
+2016-07-27 20:47:43Generating model
+2016-07-27 20:47:43"generatemodel":  done
+2016-07-27 20:48:14Executing "generatemodel"
+2016-07-27 20:48:14Generating model
+2016-07-27 20:48:14"generatemodel":  done
+2016-07-27 20:48:29Executing "generatemodel"
+2016-07-27 20:48:29Generating model
+2016-07-27 20:48:29"generatemodel":  done
+2016-07-27 20:48:43Executing "generatemodel"
+2016-07-27 20:48:43Generating model
+2016-07-27 20:48:43"generatemodel":  done
+2016-07-27 20:48:58Executing "generatemodel"
+2016-07-27 20:48:58Generating model
+2016-07-27 20:48:58"generatemodel":  done
+2016-07-27 20:49:27Executing "generatemodel"
+2016-07-27 20:49:27Generating model
+2016-07-27 20:49:27"generatemodel":  done
+2016-07-27 20:49:30Executing "generatemodel"
+2016-07-27 20:49:30Generating model
+2016-07-27 20:49:30Unable to execute generatemodel: Table already exists
+2016-07-27 20:49:30"generatemodel": finished with error
+2016-07-27 21:00:26Executing "generatemodel"
+2016-07-27 21:00:26Generating model
+2016-07-27 21:00:26"generatemodel":  done
+2016-07-27 21:01:11Executing "generatemodel"
+2016-07-27 21:01:11Generating model
+2016-07-27 21:01:11"generatemodel":  done
+2016-07-27 22:12:35Executing "fixture"
+2016-07-27 22:12:35Reading fixtures
+2016-07-27 22:12:35Added 100_pages.sql
+2016-07-27 22:12:35"fixture":  done
+2016-07-27 22:35:07Executing "generatemodel"
+2016-07-27 22:35:07Generating model
+2016-07-27 22:35:07Unable to execute generatemodel: Unable to load pages
+2016-07-27 22:35:07"generatemodel": finished with error
+2016-07-27 22:35:09Executing "generatemodel"
+2016-07-27 22:35:09Generating model
+2016-07-27 22:35:09Unable to execute generatemodel: Unable to load pages
+2016-07-27 22:35:09"generatemodel": finished with error
+2016-07-27 22:35:10Executing "generatemodel"
+2016-07-27 22:35:10Generating model
+2016-07-27 22:35:10"generatemodel":  done
+2016-07-27 22:35:17Executing "fixture"
+2016-07-27 22:35:17Reading fixtures
+2016-07-27 22:35:17Added 100_pages.sql
+2016-07-27 22:35:17"fixture":  done
+2016-07-27 23:37:17Executing "migrate"
+2016-07-27 23:37:17Reading migrations
+2016-07-27 23:37:17Unable to execute migrate: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'shop.migrations' doesn't exist
+2016-07-27 23:37:17"migrate": finished with error
+2016-07-27 23:37:35Executing "migrate"
+2016-07-27 23:37:35Reading migrations
+2016-07-27 23:38:22Executing "migrate"
+2016-07-27 23:38:22Reading migrations
+2016-07-27 23:39:09Executing "migrate"
+2016-07-27 23:39:09Reading migrations
+2016-07-27 23:39:09"migrate":  done
+2016-07-27 23:39:21Executing "migrate"
+2016-07-27 23:39:21Reading migrations
+2016-07-27 23:40:16Executing "migrate"
+2016-07-27 23:40:16Reading migrations
+2016-07-27 23:40:26Executing "migrate"
+2016-07-27 23:40:26Reading migrations
+2016-07-27 23:41:57Executing "migrate"
+2016-07-27 23:41:57Reading migrations
+2016-07-27 23:41:57Unable to execute migrate: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'shop.migrations' doesn't exist
+2016-07-27 23:41:57"migrate": finished with error
+2016-07-27 23:42:13Executing "migrate"
+2016-07-27 23:42:13Reading migrations
+2016-07-27 23:42:13Unable to execute migrate: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'shop.migrations' doesn't exist
+2016-07-27 23:42:13"migrate": finished with error
+2016-07-27 23:44:04Executing "migrate"
+2016-07-27 23:44:04Reading migrations
+2016-07-27 23:44:04Unable to execute migrate: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'shop.migrations' doesn't exist
+2016-07-27 23:44:04"migrate": finished with error
+2016-07-27 23:44:17Executing "migrate"
+2016-07-27 23:44:17Reading migrations
+2016-07-27 23:44:17Unable to execute migrate: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'shop.migrations' doesn't exist
+2016-07-27 23:44:17"migrate": finished with error
+2016-07-27 23:44:53Executing "migrate"
+2016-07-27 23:44:53Reading migrations
+2016-07-27 23:44:53Executing M001
+2016-07-27 23:44:53Just to test it works
+2016-07-27 23:44:53Unable to execute migrate: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'shop.migration' doesn't exist
+2016-07-27 23:44:53"migrate": finished with error
+2016-07-27 23:45:05Executing "migrate"
+2016-07-27 23:45:05Reading migrations
+2016-07-27 23:45:05Executing M001
+2016-07-27 23:45:05Just to test it works
+2016-07-27 23:45:05"migrate":  done
+2016-07-27 23:45:06Executing "migrate"
+2016-07-27 23:45:06Reading migrations
+2016-07-27 23:45:06"migrate":  done
+2016-07-27 23:45:07Executing "migrate"
+2016-07-27 23:45:07Reading migrations
+2016-07-27 23:45:07"migrate":  done
+2016-07-27 23:46:47Executing "migrate"
+2016-07-27 23:46:47Reading migrations
+2016-07-27 23:46:47Executing __CLAS__
+2016-07-27 23:46:47"migrate":  done
+2016-07-27 23:46:54Executing "migrate"
+2016-07-27 23:46:54Reading migrations
+2016-07-27 23:46:54Executing M002
+2016-07-27 23:46:54"migrate":  done
+2016-07-27 23:47:09Executing "migrate"
+2016-07-27 23:47:09Reading migrations
+2016-07-27 23:47:09Executing M001
+2016-07-27 23:47:09Just to test it works
+2016-07-27 23:47:09Executing M002
+2016-07-27 23:47:09"migrate":  done
+2016-07-30 15:10:47Executing "generatemodel"
+2016-07-30 15:10:47Generating model
+2016-07-30 15:10:47Unable to execute generatemodel: Unable to load Category
+2016-07-30 15:10:47"generatemodel": finished with error
+2016-07-30 15:11:24Executing "generatemodel"
+2016-07-30 15:11:24Generating model
+2016-07-30 15:11:24"generatemodel":  done
+2016-07-30 15:11:27Executing "generatemodel"
+2016-07-30 15:11:27Generating model
+2016-07-30 15:11:27"generatemodel":  done
+2016-07-30 15:11:31Executing "generatemodel"
+2016-07-30 15:11:31Generating model
+2016-07-30 15:11:31"generatemodel":  done
+2016-07-30 15:11:37Executing "generatemodel"
+2016-07-30 15:11:37Generating model
+2016-07-30 15:11:37"generatemodel":  done
+2016-07-30 15:11:41Executing "generatemodel"
+2016-07-30 15:11:41Generating model
+2016-07-30 15:19:23Executing "generatemodel"
+2016-07-30 15:19:23Generating model
+2016-07-30 15:19:23Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'created_at'
+2016-07-30 15:19:23"generatemodel": finished with error
+2016-07-30 15:20:04Executing "generatemodel"
+2016-07-30 15:20:04Generating model
+2016-07-30 15:20:04Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'created_at'
+2016-07-30 15:20:04"generatemodel": finished with error
+2016-07-30 15:20:32Executing "generatemodel"
+2016-07-30 15:20:32Generating model
+2016-07-30 15:20:32Unable to execute generatemodel: SQLSTATE[HY000]: General error: 1294 Invalid ON UPDATE clause for 'created_at' column
+2016-07-30 15:20:32"generatemodel": finished with error
+2016-07-30 15:21:15Executing "generatemodel"
+2016-07-30 15:21:15Generating model
+2016-07-30 15:21:15Unable to execute generatemodel: SQLSTATE[HY000]: General error: 1294 Invalid ON UPDATE clause for 'updated_at' column
+2016-07-30 15:21:15"generatemodel": finished with error
+2016-07-30 15:22:46Executing "generatemodel"
+2016-07-30 15:22:46Generating model
+2016-07-30 15:22:46Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'TIMESTAMP,
+ `updated_at` datetime ON UPDATE TIMESTAMP,
+ `status` int(2) UNSIGNED' at line 2
+2016-07-30 15:22:46"generatemodel": finished with error
+2016-07-30 15:31:46Executing "generatemodel"
+2016-07-30 15:31:46Generating model
+2016-07-30 15:31:46"generatemodel":  done
+2016-07-30 15:31:52Executing "fixture"
+2016-07-30 15:31:52Reading fixtures
+2016-07-30 15:31:52Added 100_pages.sql
+2016-07-30 15:31:52Unable to execute fixture: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'shop.CATEGORIES' doesn't exist
+2016-07-30 15:31:52"fixture": finished with error
+2016-07-30 15:32:09Executing "fixture"
+2016-07-30 15:32:09Reading fixtures
+2016-07-30 15:32:09Added 100_pages.sql
+2016-07-30 15:32:09Added 200_categories.sql
+2016-07-30 15:32:09"fixture":  done
+2016-07-30 15:36:24Executing "fixture"
+2016-07-30 15:36:24Reading fixtures
+2016-07-30 15:36:24Added 100_pages.sql
+2016-07-30 15:36:24Added 200_categories.sql
+2016-07-30 15:36:24Added 300_goods.sql
+2016-07-30 15:36:24"fixture":  done
+2016-07-30 21:24:57Executing "generatemodel"
+2016-07-30 21:24:57Generating model
+2016-07-30 21:24:57Unable to execute generatemodel: Unable to load Goods
+2016-07-30 21:24:57"generatemodel": finished with error
+2016-07-30 21:25:01Executing "generatemodel"
+2016-07-30 21:25:01Generating model
+2016-07-30 21:25:01Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'created_at'
+2016-07-30 21:25:01"generatemodel": finished with error
+2016-07-30 21:25:20Executing "generatemodel"
+2016-07-30 21:25:20Generating model
+2016-07-30 21:25:20"generatemodel":  done
+2016-07-30 21:25:34Executing "cleantables"
+2016-07-30 21:25:34Cleaning tables
+2016-07-30 21:25:34Cleaning table categories
+2016-07-30 21:25:34Cleaning table goods
+2016-07-30 21:25:34Cleaning table migrations
+2016-07-30 21:25:34Cleaning table orders
+2016-07-30 21:25:34Cleaning table orders_goods
+2016-07-30 21:25:34Cleaning table pages
+2016-07-30 21:25:34"cleantables":  done
+2016-07-30 21:25:44Executing "fixture"
+2016-07-30 21:25:44Reading fixtures
+2016-07-30 21:25:44Added 100_pages.sql
+2016-07-30 21:25:44Added 200_categories.sql
+2016-07-30 21:25:44Added 300_goods.sql
+2016-07-30 21:25:44"fixture":  done
+2016-07-30 21:26:06Executing "cleantables"
+2016-07-30 21:26:06Cleaning tables
+2016-07-30 21:26:06Cleaning table categories
+2016-07-30 21:26:06Cleaning table goods
+2016-07-30 21:26:06Cleaning table migrations
+2016-07-30 21:26:06Cleaning table orders
+2016-07-30 21:26:06Cleaning table orders_goods
+2016-07-30 21:26:06Cleaning table pages
+2016-07-30 21:26:06"cleantables":  done
+2016-07-30 21:26:53Executing "generatemodel"
+2016-07-30 21:26:53Generating model
+2016-07-30 21:27:00Executing "generatemodel"
+2016-07-30 21:27:00Generating model
+2016-07-30 21:27:00Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DATETIME_NOW(),
+ `updated_at` datetime,
+ `status` int(2) UNSIGNED,
+ `name` varch' at line 2
+2016-07-30 21:27:00"generatemodel": finished with error
+2016-07-30 21:27:12Executing "generatemodel"
+2016-07-30 21:27:12Generating model
+2016-07-30 21:27:12Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DATETIME_NOW(),
+ `status` int(2) UNSIGNED,
+ `name` varchar(512),
+ `price` float,' at line 3
+2016-07-30 21:27:12"generatemodel": finished with error
+2016-07-30 21:28:21Executing "generatemodel"
+2016-07-30 21:28:21Generating model
+2016-07-30 21:28:21Unable to execute generatemodel: SQLSTATE[HY000]: General error: 1294 Invalid ON UPDATE clause for 'updated_at' column
+2016-07-30 21:28:21"generatemodel": finished with error
+2016-07-30 21:29:19Executing "generatemodel"
+2016-07-30 21:29:19Generating model
+2016-07-30 21:29:19Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'CURRENT_DATE,
+ `status` int(2) UNSIGNED,
+ `name` varchar(512),
+ `price` float,
+ ' at line 3
+2016-07-30 21:29:19"generatemodel": finished with error
+2016-07-30 21:29:26Executing "generatemodel"
+2016-07-30 21:29:26Generating model
+2016-07-30 21:29:26Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'CURRENT_DATE(),
+ `status` int(2) UNSIGNED,
+ `name` varchar(512),
+ `price` float,' at line 3
+2016-07-30 21:29:26"generatemodel": finished with error
+2016-07-30 21:30:05Executing "generatemodel"
+2016-07-30 21:30:05Generating model
+2016-07-30 21:30:05Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'updated_at'
+2016-07-30 21:30:05"generatemodel": finished with error
+2016-07-30 21:30:38Executing "generatemodel"
+2016-07-30 21:30:38Generating model
+2016-07-30 21:30:38Unable to execute generatemodel: SQLSTATE[HY000]: General error: 1294 Invalid ON UPDATE clause for 'updated_at' column
+2016-07-30 21:30:38"generatemodel": finished with error
+2016-07-30 21:31:40Executing "generatemodel"
+2016-07-30 21:31:40Generating model
+2016-07-30 21:31:40Unable to execute generatemodel: SQLSTATE[HY000]: General error: 1294 Invalid ON UPDATE clause for 'updated_at' column
+2016-07-30 21:31:40"generatemodel": finished with error
+2016-07-30 21:31:47Executing "generatemodel"
+2016-07-30 21:31:47Generating model
+2016-07-30 21:31:47Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOT NULL ON UPDATE NOW(),
+ `status` int(2) UNSIGNED,
+ `name` varchar(512),
+ `pri' at line 3
+2016-07-30 21:31:47"generatemodel": finished with error
+2016-07-30 21:32:19Executing "generatemodel"
+2016-07-30 21:32:19Generating model
+2016-07-30 21:32:19Unable to execute generatemodel: SQLSTATE[HY000]: General error: 1293 Incorrect table definition; there can be only one TIMESTAMP column with CURRENT_TIMESTAMP in DEFAULT or ON UPDATE clause
+2016-07-30 21:32:19"generatemodel": finished with error
+2016-07-30 21:33:27Executing "generatemodel"
+2016-07-30 21:33:27Generating model
+2016-07-30 21:33:27Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+ `updated_at` timestamp DEFAULT CURRENT_TIMESTAMP() ON UPDATE CURRENT_TIMESTAMP' at line 2
+2016-07-30 21:33:27"generatemodel": finished with error
+2016-07-30 21:33:46Executing "generatemodel"
+2016-07-30 21:33:46Generating model
+2016-07-30 21:33:46Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+ `updated_at` timestamp DEFAULT NOW ON UPDATE NOW,
+ `status` int(2) UNSIGNED,
+ ' at line 2
+2016-07-30 21:33:46"generatemodel": finished with error
+2016-07-30 21:33:57Executing "generatemodel"
+2016-07-30 21:33:58Generating model
+2016-07-30 21:33:58Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+ `updated_at` timestamp DEFAULT NOW() ON UPDATE NOW(),
+ `status` int(2) UNSIGNE' at line 2
+2016-07-30 21:33:58"generatemodel": finished with error
+2016-07-30 21:34:30Executing "generatemodel"
+2016-07-30 21:34:30Generating model
+2016-07-30 21:34:30Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+ `updated_at` timestamp DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+' at line 2
+2016-07-30 21:34:30"generatemodel": finished with error
+2016-07-30 21:34:39Executing "generatemodel"
+2016-07-30 21:34:39Generating model
+2016-07-30 21:34:39Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '
+ `updated_at` timestamp DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+' at line 2
+2016-07-30 21:34:39"generatemodel": finished with error
+2016-07-30 21:34:51Executing "generatemodel"
+2016-07-30 21:34:51Generating model
+2016-07-30 21:34:51"generatemodel":  done
+2016-07-30 21:35:02Executing "fixture"
+2016-07-30 21:35:02Reading fixtures
+2016-07-30 21:35:02Added 100_pages.sql
+2016-07-30 21:35:02Added 200_categories.sql
+2016-07-30 21:35:02Added 300_goods.sql
+2016-07-30 21:35:02"fixture":  done
+2016-07-30 21:35:29Executing "fixture"
+2016-07-30 21:35:29Reading fixtures
+2016-07-30 21:35:29Added 100_pages.sql
+2016-07-30 21:35:29Added 200_categories.sql
+2016-07-30 21:35:29Unable to execute fixture: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'shop.goods' doesn't exist
+2016-07-30 21:35:29"fixture": finished with error
+2016-07-30 21:35:32Executing "generatemodel"
+2016-07-30 21:35:32Generating model
+2016-07-30 21:35:32Unable to execute generatemodel: SQLSTATE[HY000]: General error: 1293 Incorrect table definition; there can be only one TIMESTAMP column with CURRENT_TIMESTAMP in DEFAULT or ON UPDATE clause
+2016-07-30 21:35:32"generatemodel": finished with error
+2016-07-30 21:36:42Executing "generatemodel"
+2016-07-30 21:36:42Generating model
+2016-07-30 21:36:42Unable to execute generatemodel: SQLSTATE[HY000]: General error: 1293 Incorrect table definition; there can be only one TIMESTAMP column with CURRENT_TIMESTAMP in DEFAULT or ON UPDATE clause
+2016-07-30 21:36:42"generatemodel": finished with error
+2016-07-30 21:37:09Executing "generatemodel"
+2016-07-30 21:37:09Generating model
+2016-07-30 21:37:09Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'updated_at'
+2016-07-30 21:37:09"generatemodel": finished with error
+2016-07-30 21:37:21Executing "generatemodel"
+2016-07-30 21:37:21Generating model
+2016-07-30 21:37:21Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'updated_at'
+2016-07-30 21:37:21"generatemodel": finished with error
+2016-07-30 21:37:51Executing "generatemodel"
+2016-07-30 21:37:51Generating model
+2016-07-30 21:37:51Unable to execute generatemodel: SQLSTATE[HY000]: General error: 1293 Incorrect table definition; there can be only one TIMESTAMP column with CURRENT_TIMESTAMP in DEFAULT or ON UPDATE clause
+2016-07-30 21:37:51"generatemodel": finished with error
+2016-07-30 21:38:08Executing "generatemodel"
+2016-07-30 21:38:08Generating model
+2016-07-30 21:38:08Unable to execute generatemodel: SQLSTATE[HY000]: General error: 1293 Incorrect table definition; there can be only one TIMESTAMP column with CURRENT_TIMESTAMP in DEFAULT or ON UPDATE clause
+2016-07-30 21:38:08"generatemodel": finished with error
+2016-07-30 21:39:11Executing "generatemodel"
+2016-07-30 21:39:11Generating model
+2016-07-30 21:39:11"generatemodel":  done
+2016-07-30 21:39:15Executing "fixture"
+2016-07-30 21:39:15Reading fixtures
+2016-07-30 21:39:15Added 100_pages.sql
+2016-07-30 21:39:15Added 200_categories.sql
+2016-07-30 21:39:15Added 300_goods.sql
+2016-07-30 21:39:15"fixture":  done
+2016-07-30 21:41:46Executing "generatemodel"
+2016-07-30 21:41:46Generating model
+2016-07-30 21:41:46Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NOT NULL,
+ `updated_at` datetime DEFAULT NOW() ON UPDATE NOW(),
+ `status` int(2)' at line 2
+2016-07-30 21:41:46"generatemodel": finished with error
+2016-07-30 21:41:58Executing "generatemodel"
+2016-07-30 21:41:58Generating model
+2016-07-30 21:41:58Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'updated_at'
+2016-07-30 21:41:58"generatemodel": finished with error
+2016-07-30 21:42:29Executing "generatemodel"
+2016-07-30 21:42:29Generating model
+2016-07-30 21:42:29Unable to execute generatemodel: SQLSTATE[HY000]: General error: 1294 Invalid ON UPDATE clause for 'updated_at' column
+2016-07-30 21:42:29"generatemodel": finished with error
+2016-07-30 21:42:45Executing "generatemodel"
+2016-07-30 21:42:45Generating model
+2016-07-30 21:42:45Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'CURRENT_DATETIME,
+ `status` int(2) UNSIGNED,
+ `name` varchar(512),
+ `price` floa' at line 3
+2016-07-30 21:42:45"generatemodel": finished with error
+2016-07-30 21:43:24Executing "generatemodel"
+2016-07-30 21:43:24Generating model
+2016-07-30 21:43:24Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '6),
+ `updated_at` datetime DEFAULT NOT_NULL ON UPDATE CURRENT_TIMESTAMP(3),
+ `st' at line 2
+2016-07-30 21:43:24"generatemodel": finished with error
+2016-07-30 21:43:43Executing "generatemodel"
+2016-07-30 21:43:43Generating model
+2016-07-30 21:43:43Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '6),
+ `updated_at` datetime NOT_NULL ON UPDATE CURRENT_TIMESTAMP(3),
+ `status` in' at line 2
+2016-07-30 21:43:43"generatemodel": finished with error
+2016-07-30 21:43:50Executing "generatemodel"
+2016-07-30 21:43:50Generating model
+2016-07-30 21:43:50Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '6),
+ `updated_at` datetime NOT NULL ON UPDATE CURRENT_TIMESTAMP(3),
+ `status` in' at line 2
+2016-07-30 21:43:50"generatemodel": finished with error
+2016-07-30 21:44:07Executing "generatemodel"
+2016-07-30 21:44:07Generating model
+2016-07-30 21:44:07Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '6),
+ `updated_at` timestamp NOT NULL ON UPDATE CURRENT_TIMESTAMP(3),
+ `status` i' at line 2
+2016-07-30 21:44:07"generatemodel": finished with error
+2016-07-30 21:44:25Executing "generatemodel"
+2016-07-30 21:44:25Generating model
+2016-07-30 21:44:25Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '6),
+ `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+ `status` int(' at line 2
+2016-07-30 21:44:25"generatemodel": finished with error
+2016-07-30 21:46:42Executing "generatemodel"
+2016-07-30 21:46:42Generating model
+2016-07-30 21:46:42Unable to execute generatemodel: SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'updated_at'
+2016-07-30 21:46:42"generatemodel": finished with error
+2016-07-30 21:46:58Executing "generatemodel"
+2016-07-30 21:46:58Generating model
+2016-07-30 21:46:58Unable to execute generatemodel: SQLSTATE[HY000]: General error: 1294 Invalid ON UPDATE clause for 'updated_at' column
+2016-07-30 21:46:58"generatemodel": finished with error
+2016-07-30 21:48:11Executing "generatemodel"
+2016-07-30 21:48:11Generating model
+2016-07-30 21:48:11Unable to execute generatemodel: SQLSTATE[HY000]: General error: 1293 Incorrect table definition; there can be only one TIMESTAMP column with CURRENT_TIMESTAMP in DEFAULT or ON UPDATE clause
+2016-07-30 21:48:11"generatemodel": finished with error
+2016-07-30 22:40:47Executing "fixture"
+2016-07-30 22:40:47Reading fixtures
+2016-07-30 22:40:47Added 100_pages.sql
+2016-07-30 22:40:47Added 200_categories.sql
+2016-07-30 22:40:47Unable to execute fixture: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'shop.goods' doesn't exist
+2016-07-30 22:40:47"fixture": finished with error
+2016-07-30 22:40:50Executing "generatemodel"
+2016-07-30 22:40:50Generating model
+2016-07-30 22:40:50"generatemodel":  done
+2016-07-30 22:40:58Executing "cleantables"
+2016-07-30 22:40:58Cleaning tables
+2016-07-30 22:40:58Cleaning table categories
+2016-07-30 22:40:58Cleaning table goods
+2016-07-30 22:40:58Cleaning table migrations
+2016-07-30 22:40:58Cleaning table orders
+2016-07-30 22:40:58Cleaning table orders_goods
+2016-07-30 22:40:58Cleaning table pages
+2016-07-30 22:40:58"cleantables":  done
+2016-07-30 22:41:00Executing "fixture"
+2016-07-30 22:41:00Reading fixtures
+2016-07-30 22:41:00Added 100_pages.sql
+2016-07-30 22:41:00Added 200_categories.sql
+2016-07-30 22:41:00Added 300_goods.sql
+2016-07-30 22:41:00"fixture":  done

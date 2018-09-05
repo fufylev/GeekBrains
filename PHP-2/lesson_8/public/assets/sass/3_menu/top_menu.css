@@ -1,0 +1,35 @@
+.top-menu {
+    position: relative;
+    z-index: 98;
+    background-color: #ffffff;
+}
+.top-menu__item {
+    position: relative;
+}
+.top-menu__list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.top-menu__list > li:hover .drop-menu {
+    display: flex;
+}
+.top-menu__link {
+    position: relative;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 14px 25px 17px 19px;
+    display: block;
+}
+.top-menu__link:hover {
+    color: #f16d7f;
+}
+.top-menu__link_current-page {
+    border-bottom: 3px solid #f16d7f;
+}
+.top-menu__link_current-page:hover {
+    color: #000;
+}
+/*# sourceMappingURL=top_menu.css.map */

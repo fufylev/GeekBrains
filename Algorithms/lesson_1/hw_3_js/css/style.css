@@ -1,0 +1,41 @@
+.body {
+    font-family: Arial, serif;
+    font-size: 20px;
+}
+.main_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1140px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.left {
+    width: 45%;
+}
+.right {
+    width: 45%;
+}
+.review_item {
+    padding: 15px;
+    margin: 30px 15px 20px;
+}
+.review_text {
+    font-size: 20px;
+}
+.review_author {
+    font-size: 14px;
+}
+.review__new {
+    padding: 15px;
+    margin: 15px;
+}
+.verified {
+    background-color: #9ea19c;
+}
+.form-control {
+    width: 95%;
+}
+.form-group {
+    margin-bottom: 20px;
+}

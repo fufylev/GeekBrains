@@ -1,0 +1,150 @@
+$color-pink: #f16d7f;
+
+.product-cards {
+  @extend .container;
+  &__caption {
+    color: #4d4d4d;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    &_main {
+      color: #222222;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 12px;
+      letter-spacing: 0.75px;
+      text-transform: capitalize;
+    }
+    &_sec-line {
+      color: #9f9f9f;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 54px;
+      text-transform: none;
+      letter-spacing: 0.35px;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 39px;
+    justify-content: space-between;
+  }
+  &__box {
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    width: 261px;
+    margin: 0 0 30px 0;
+    padding-bottom: 25px;
+    &:hover {
+      box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16);
+    }
+    &:hover img.product-cards__pic {
+      filter: brightness(40%);
+      transform: scale(1.06);
+    }
+    &:hover .product-cards__btns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  &__btns {
+    display: none;
+    width: 148px;
+    position: absolute;
+    z-index: 10;
+    top: 95px;
+    left: 56px;
+  }
+  &__cart-btn {
+    width: 148px;
+    height: 42px;
+    border-radius: 3px;
+    border: 1px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.7s ease-out;
+    &:hover {
+      background: $color-pink;
+    }
+    &_main {
+      width: 248px;
+      height: 72px;
+      font-size: 20px;
+      background: $color-pink;
+      &:hover {
+        background: #ffffff;
+        color: $color-pink;
+        border: 1px solid $color-pink;
+      }
+      &:hover .product-cards__cart-icon {
+        color: $color-pink;
+      }
+    }
+  }
+  &__cart-icon {
+    transition: all 0.7s ease-out;
+    margin-right: 20px;
+    font-size: 20px;
+    color: white;
+    &_main {
+      font-size: 30px;
+    }
+  }
+  &__reset-btn,
+  &__like-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 42px;
+    border-radius: 3px;
+    border: 1px solid #ffffff;
+    background: transparent;
+    margin-top: 5px;
+    transition: all 0.7s ease-out;
+    font-size: 20px;
+    color: white;
+    &:hover {
+      background: $color-pink;
+    }
+  }
+  &__pic {
+    transition: all 0.7s ease-out;
+    width: 261px;
+    height: 280px;
+  }
+  &__name {
+    color: #6f6e6e;
+    width: 231px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: block;
+    margin: 14px;
+  }
+  &__footer {
+    align-self: flex-end;
+  }
+  &__price {
+    color: $color-pink;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 14px;
+
+  }
+  &__stars {
+    color: #e4af48;
+    padding-left: 90px;
+  }
+}

@@ -1,0 +1,52 @@
+.gallery img {
+    margin: 5px;
+    border: 3px solid #fff;
+}
+a.photo:hover img {
+    border: 3px solid #034F80;
+}
+a {
+    text-decoration: none;
+}
+#main {
+    width: 100%;
+    text-align: center;
+    color: gray();
+}
+.wrapper {
+    width: 900px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+h2 {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+.max img {
+    height: 88vmin;
+}
+.likes h2 {
+    font-weight: 700;
+    color: #ae272e;
+}
+.home a {
+    color: #1E1E1E;
+}
+.image h2 {
+    color: #68666b;
+}
+.photo {
+    position: relative;
+}
+.looks {
+    position: absolute;
+    top: -160px;
+    right: 16px;
+    font-weight: 400;
+    background-color: #fcf3ff;
+    color: #000000;
+}
