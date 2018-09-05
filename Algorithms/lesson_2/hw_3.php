@@ -11,6 +11,7 @@ function mergeSort($arr) {
         return merge(mergeSort(array_slice($arr, 0, $q)), mergeSort(array_slice($arr, $q)));
     }
 }
+
 function merge($leftArr, $rightArr) {
     $twoArrCount = count($leftArr)+count($rightArr);
 
@@ -36,7 +37,9 @@ function merge($leftArr, $rightArr) {
             $right++;
         }
     }
+
     return $arr;
 }
+
 $arr = [12, 15, 789, 789,753, 14, 16, 456, 89, 1347, 1, 0, 951, 159, 753, 159];
 print_r(mergeSort($arr));
