@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>calculateArea</title>
+</head>
+<body>
+<p>Написать функцию calculateArea, которая будет принимать параметры для вычисления площади
+  (можете выбрать конкретную фигуру или, основываясь на переданных параметрах,
+  выполнять требуемый алгоритм вычисления площади для переданной в параметрах фигуры)
+  и возвращать объект вида: { area, figure, input } (где area – вычисленная площадь,
+  figure – название фигуры, для которой вычислялась площадь, input – входные параметры,
+  по которым было произведено вычисление.</p>
+
+
+<script>
+  'use strict';
+
+  let calculateArea = (...params) => {
+    //console.log(`Enter params - `, params);
+    params = params[0].split(",");
+    //console.log(params);
+    let object = {
+      area: null,
+      figure: '',
+      input: []
+    };
+
+    let sidesCount = params.length; // sides number
+    let area = null; // square
+
+    for (let i in params) {
+      if (i <= 0) {
+        return console.log('The length of side must be more then zero, please, reenter parameters');
+      }
+    }
+
+    switch (sidesCount) {
+      case 0 || 1:
+        return console.log('The figure must contain more than one side, please enter at least two side');
+      case 2:
+        object.figure = (params[0] == params[1]) ? 'Quadrate' : 'Rectangle';
+        area = params[0] * params[1];
+        break;
+      case 3:
+        object.figure = 'Triangle';
+        let a = +params[0],
+          b = +params[1],
+          c = +params[2],
+          half = (a + b + c) / 2; // Triangle half-perimeter
+        //console.log(a,b,c, half);
+        area = Math.sqrt(half * (half - a) * (half - b) * (half - c)); // Triangle square
+        area = area.toFixed(2);
+        break;
+      default:
+        return console.log('You had to enter not more than 3 numbers');
+    }
+
+    object.area = area;
+    object.input = params;
+    return console.log(object);
+  };
+
+  calculateArea(prompt(`Enter separated by commas figure side lengths - two numbers if "Quadrate" or "Rectangle", or three numbers if "Triangle"`));
+
+</script>
+
+</body>
+</html>

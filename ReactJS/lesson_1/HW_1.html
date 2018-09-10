@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>callback</title>
+</head>
+<body>
+<p>Написать функцию loop, которая будет принимать параметры: times (значение по умолчанию = 0),
+  callback (значение по умолчанию = null) и будет в цикле (times раз), вызывать функцию callback.
+  Если функция не передана, то цикл не должен отрабатывать ни разу. Покажите применение этой функции.</p>
+<script>
+  'use strict';
+
+  const loop = (times = 0, callback = null) => {
+    if (callback) {
+      for (let i = 1; i <= times; i++) {
+        callback(i);
+      }
+    }
+  };
+  loop(); // the loop will not be executed
+  loop(15, (a) => document.write(`${a} callback execution<br>`));
+</script>
+
+</body>
+</html>

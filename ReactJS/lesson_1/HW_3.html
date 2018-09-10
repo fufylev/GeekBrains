@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Human class</title>
+</head>
+<body>
+<!--
+ Необходимо написать иерархию классов вида:
+Human -> Employee -> Developer
+Human -> Employee -> Manager
+Каждый Менеджер (Manager) должен иметь внутренний массив своих сотрудников (разработчиков), а также методы по удалению и добавлению разработчиков.
+Каждый Разработчик (Developer) должны иметь ссылку на Менеджера и методы для изменения менеджера (имеется в виду возможность назначить другого менеджера).
+У класса Human должны быть следующие параметры: name (строка), age (число), dateOfBirth (строка или дата).
+У класса Employee должны присутствовать параметры: salary (число), department (строка).
+В классе Human должен присутствовать метод displayInfo, который возвращает строку со всеми параметрами экземпляра Human.
+В классе Employee должен быть реализован такой же метод (displayInfo), который вызывает базовый метод и дополняет его параметрами из экземпляра Employee.
+Чтобы вызвать метод базового класса, необходимо внутри вызова метода displayInfo класса Employee написать: super.displayInfo(). Это вызовет метод disaplyInfo класс Human и вернет строку с параметрами Human.
+ -->
+
+<script>
+  'use strict';
+
+  /**
+   * Main parent class
+   */
+  class Human {
+    constructor(name, age, dateOfBirth) {
+      this.name = name;
+      this.age = age;
+      this.dateOfBirth = dateOfBirth;
+    }
+
+    displayInfo() {
+      console.log(this);
+    }
+  }
+
+  /**
+   * parent class for Developer and Manager classes
+   */
+  class Employee extends Human {
+    constructor(name, age, dateOfBirth, salary, department) {
+      super(name, age, dateOfBirth);
+      this.salary = salary;
+      this.department = department;
+    }
+
+    displayInfo() {
+      super.displayInfo();
+    }
+  }
+
+  /**
+   * Class for developers
+   */
+  class Developer extends Employee {
+    constructor(name, age, dateOfBirth, salary, department, manager = '') {
+      super(name, age, dateOfBirth, salary, department);
+      this.manager = manager;
+    }
+
+    assignManager(manager) {
+      this.manager = manager;
+    }
+
+    displayInfo() {
+      super.displayInfo();
+    }
+  }
+
+  /**
+   * Class for Managers
+   */
+  class Manager extends Employee {
+    constructor(name, age, dateOfBirth, salary, department, developers = []) {
+      super(name, age, dateOfBirth, salary, department);
+      this.subordinateStaff = developers;
+    }
+
+    addSubordinateStaff(developer) {
+      this.subordinateStaff.push(developer);
+    }
+
+    excludeEmployee(developer) {
+      for (let person in this.subordinateStaff) {
+        if (this.subordinateStaff[person] == developer) {
+          this.subordinateStaff.splice(person, 1);
+        }
+      }
+    }
+
+    displayInfo() {
+      super.displayInfo();
+    }
+  }
+
+  // Add some subordinateStaff
+  let seniorDeveloper = new Developer('AJ', 33, '1985-01-25', 105000, 'iOS development');
+  let juniorDeveloper = new Developer('John', 24, '1994-04-18', 35000, 'IT desk');
+  let middleDeveloper = new Developer('Nick', 18, '2000-01-01', 70000, 'iOS development');
+
+  // Assign new Managers
+  let CEO = new Manager('Tim Cook', 57, '1960-11-01', 1, 'CEO of APPLE Inc.');
+  let managerIT = new Manager('Andy Hertzfeld', 65, '1953-04-06', 1, 'Apple Macintosh development');
+
+  // Assign some subordinates to this Manager
+  managerIT.addSubordinateStaff(seniorDeveloper);
+  managerIT.addSubordinateStaff(juniorDeveloper);
+  managerIT.addSubordinateStaff(middleDeveloper);
+
+  CEO.addSubordinateStaff(managerIT); // this is fake joke )))
+
+  // Delete one of developer
+  managerIT.excludeEmployee(juniorDeveloper);
+
+  //
+  seniorDeveloper.assignManager(managerIT);
+  juniorDeveloper.assignManager(managerIT);
+  middleDeveloper.assignManager(managerIT);
+
+  // get info
+  seniorDeveloper.displayInfo();
+  managerIT.displayInfo();
+  CEO.displayInfo(); // most stuffed by employees manager
+
+</script>
+
+</body>
+</html>
