@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FUNCTION GENERATOR</title>
+</head>
+<body>
+
+<!--
+*При помощи генератора написать функцию-анкету, которая запрашивает у пользователя на ввод параметры и передает их в генератор.
+В конце, когда генератор завершается, он должен вернуть все введенные входные параметры в виде объекта.
+Этот объект нужно вывести в консоли.
+-->
+
+<script>
+  'use strict';
+
+  // I took this code and idea from "https://learn.javascript.ru/generator",
+  // So I've got an idea of how such functions work
+
+  function* generateSequence() {
+    yield prompt('What do you think about iPhone X');
+    yield prompt('What do you think about Samsung Galaxy S9+');
+    return prompt('Based on your previous thoughts what would you choose and why?');
+  }
+
+
+  let	generator = generateSequence();
+  let summary = {};
+
+  // use ES6 `` to generate strings
+  summary.question1 = `What do you think about iPhone X - ${generator.next().value}`;
+  summary.question2 = `What do you think about Samsung Galaxy S9+ - ${generator.next().value}`;
+  summary.summary = `Based on your previous your choose is - ${generator.next().value}`;
+
+  console.log(summary);
+</script>
+
+</body>
+</html>
