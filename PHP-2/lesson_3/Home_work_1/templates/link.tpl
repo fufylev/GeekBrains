@@ -1,1 +1,0 @@
-<a rel='gallery' class='photo' href='max-img.php?id={{id}}'><img src='img/max/{{file}}' width="300" height="170"></a>
