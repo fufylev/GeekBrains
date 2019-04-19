@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS_1 Lesson 2</title>
+</head>
+<body>
+<h1>JS-1</h1>
+<h1>Home Work #2</h1>
+
+<script>
+  "use strict";
+
+  /*4. Реализовать основные 4 арифметические операции (+, -, /, *) в виде функций с двумя параметрами. 
+        Обязательно использовать оператор return.
+     */
+
+  let a = 6, b = 3; //можно через prompt
+
+  console.log(`сумма двух чисел ${a} и ${b} равна: ${toSum(a, b)}`);
+  console.log(`разность двух чисел ${a} и ${b} равна: ${toSubtract(a, b)}`);
+  console.log(`деление числа ${a} на число ${b} равно: ${toDivide(a, b)}`);
+  console.log(`умножение числа ${a} на число ${b} равно: ${toMultiply(a, b)}`);
+
+  /**
+   * Функция сложения
+   * @param {number} n1 - целочисленное число
+   * @param {number} n2 - целочисленное число
+   * @returns {*} - результат сложения числа n1 и n2
+   */
+  function toSum(n1, n2) {
+    return n1 + n2;
+  }
+
+  /**
+   * Функция вычитания
+   * @param {number} n1 - целочисленное число
+   * @param {number} n2 - целочисленное число
+   * @returns {number} - результат вычитания числа n2 из n1
+   */
+  function toSubtract(n1, n2) {
+    return n1 - n2;
+  }
+
+  /**
+   * Функция умножения чисел
+   * @param {number} n1 - целочисленное число
+   * @param {number} n2 - целочисленное число
+   * @returns {number} - результат умножения числа n1 на n2
+   */
+  function toMultiply(n1, n2) {
+    return n1 * n2;
+  }
+
+  /**
+   * Функция деления чисел
+   * @param {number} n1 - целочисленное число
+   * @param {number} n2 - целочисленное число
+   * @returns {number} - результат деления n1 на n2
+   */
+  function toDivide(n1, n2) {
+    return n1 / n2;
+  }
+
+
+</script>
+
+</body>
+</html>
