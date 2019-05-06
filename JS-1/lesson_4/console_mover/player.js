@@ -1,8 +1,12 @@
- let player = {
+/**
+ *
+ * @type {{move(*): void, x: number, y: number}}
+ */
+let player = {
     x: 0,
     y: 0,
-
-    move(nextPoint) {
+    
+    move( nextPoint ) {
         this.x = nextPoint.x;
         this.y = nextPoint.y;
     }

@@ -2,6 +2,7 @@
 
 let number = prompt( 'Введите число от 0 до 999' );
 
+
 /* это если пойти по легкому пути при максимуме цифр 3*/
 if ( !( parseInt( number ) > 999 ) ) {
     let ones = number % 10,
@@ -12,6 +13,7 @@ if ( !( parseInt( number ) > 999 ) ) {
 } else {
     console.log( 'Your input exceeds the number of 999' );
 }
+
 
 /* Если пойти по сложному пути с возможностью задания вплоть до триллионных частей */
 let arr = [ 'hundreds', 'tens', 'ones' ]; // тут можно сделать архив вплоть до триллионов

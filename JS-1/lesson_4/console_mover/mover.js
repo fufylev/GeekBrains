@@ -3,8 +3,6 @@
  * @type {{getDirection(): (null|*|undefined), getNextPosition(*): *}}
  */
 let mover = {
-    
-    // JSDOC
     /**
      * Метод для получение направления
      * @returns {direction - направление, которое может быть 2, 4...}

@@ -1,3 +1,7 @@
+/**
+ *
+ * @type {{init(): void, run(): (undefined)}}
+ */
 let game = {
     init() {
         renderer.render();
@@ -21,6 +25,5 @@ let game = {
         }
     }
 };
-
 game.init();
 
