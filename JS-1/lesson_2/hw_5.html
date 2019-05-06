@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS_1 Lesson 2</title>
+</head>
+<body>
+<h1>JS-1</h1>
+<h1>Home Work #2</h1>
+
+<script>
+  "use strict";
+
+  //Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation),
+  // где arg1, arg2 — значения аргументов, operation — строка с названием операции. В зависимости от переданного
+  // значения выполнить одну из арифметических операций
+  // (использовать функции из пункта 4 и вернуть полученное значение (применить switch).
+
+  /**
+   * Функция сложения
+   * @param {number} n1 - целочисленное число
+   * @param {number} n2 - целочисленное число
+   * @returns {*} - результат сложения числа n1 и n2
+   */
+  function toSum(n1, n2) {
+    return n1 + n2;
+  }
+
+  /**
+   * Функция вычитания
+   * @param {number} n1 - целочисленное число
+   * @param {number} n2 - целочисленное число
+   * @returns {number} - результат вычитания числа n2 из n1
+   */
+  function toSubtract(n1, n2) {
+    return n1 - n2;
+  }
+
+  /**
+   * Функция умножения чисел
+   * @param {number} n1 - целочисленное число
+   * @param {number} n2 - целочисленное число
+   * @returns {number} - результат умножения числа n1 на n2
+   */
+  function toMultiply(n1, n2) {
+    return n1 * n2;
+  }
+
+  /**
+   * Функция деления чисел
+   * @param {number} n1 - целочисленное число
+   * @param {number} n2 - целочисленное число
+   * @returns {number} - результат деления n1 на n2
+   */
+  function toDivide(n1, n2) {
+    return n1 / n2;
+  }
+
+
+  /**
+   * Функция матем действия с двумя аргументами
+   * @param {number} arg1 - число
+   * @param {number} arg2 - число
+   * @param {string} operation - математич фукция с аргументами
+   */
+  function mathOperation(arg1, arg2, operation) {
+    switch (operation) {
+      case '+':
+        return `сумма двух чисел ${arg1} и ${arg2} равна: ${toSum(arg1, arg2)}`;
+      case '-':
+        return `разность двух чисел ${arg1} и ${arg2} равна: ${toSubtract(arg1, arg2)}`;
+      case '/':
+        return `деление числа ${arg1} на число ${arg2} равно: ${toDivide(arg1, arg2)}`;
+      case '*':
+        return `умножение числа ${arg1} на число ${arg2} равно: ${toMultiply(arg1, arg2)}`;
+      default:
+        alert("несуществующая операция");
+        if (!confirm('Хотите изменить операцию?')) {
+          break;
+        } else {
+          let operation = prompt(`Выберите математическую опарацию - введите один из четырех символов: сложение - "+"; вычитание - "-"; деление - "/": умножение - "*"`);
+          alert(mathOperation(arg1, arg2, operation));
+          break;
+        }
+    }
+  }
+
+  let arg1 = parseInt(prompt("Введите первое число"));
+  let arg2 = parseInt(prompt("Введите второе число"));
+  let operation = prompt(`Выберите математическую опарацию - введите один из четырех символов: сложение - "+"; вычитание - "-"; деление - "/": умножение - "*"`);
+
+
+  alert(mathOperation(arg1, arg2, operation));
+
+</script>
+
+</body>
+</html>
