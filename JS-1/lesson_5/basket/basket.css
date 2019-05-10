@@ -1,0 +1,55 @@
+body {
+    font-family: Arial;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+.cart-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cart-box {
+    display: block;
+    max-width: 300px;
+    text-align: center;
+}
+.cart-box_pic {
+    width: 200px;
+    height: 200px;
+}
+.name {
+    color: #4e555b;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.price {
+    color: red;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+button.sell {
+    padding: 3px 7px;
+    color: #333;
+    border-radius: 25px;
+    border: 1px solid #666;
+    width: 280px;
+    height: 40px;
+    font-size: 22px;
+    background-color: aqua;
+}
+.qnt {
+    color: #4e555b;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.sum {
+    color: red;
+    font-weight: 400;
+    font-size: 20px;
+}
