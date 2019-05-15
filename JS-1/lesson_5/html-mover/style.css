@@ -1,0 +1,22 @@
+html {
+    background: #cfcfcf;
+}
+
+table {
+    border-collapse: collapse;
+    background: rgb(131, 205, 240);
+}
+
+td {
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+}
+
+.user {
+    background: darkred;
+}
+
+.obstacle {
+    background: black;
+}
