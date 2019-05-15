@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    .form-wrap {
+      margin: auto;
+      padding: 20px;
+      max-width: 800px
+    }
+  </style>
+</head>
+<body>
+<!--
+* Создать форму в html со следующими полями:
+• Логин - текстовое поле
+• Пароль - поле типа password
+• Повтор пароля - поле типа password
+• Кнопка отправить форму
+Необходимо реализовать валидацию этой формы по следующим правилам:
+• Логин - должно содержать как минимум 1 символ, не более 50 символов.
+• Пароль - минимум 5 символов, максимум 50.
+• Повтор пароля - значение должно совпадать с полем пароль.
+• Кнопка отправить форму - при нажатии на кнопку форма должна провериться, при
+прохождении проверки, форма отправляется, если проверка не была пройдена, то:
+o Каждое поле, которое не прошло проверку должно выделяться красным
+цветом.
+o Под каждым полем, что не прошло проверку, должна писаться подсказка по
+какой причине проверка провалилась.
+Пользоваться аттрибутами HTML5 запрещено, необходимо реализовать проверки с
+помощью javascript.
+-->
+  <div class="form-wrap">
+    <form class="my-form" action="">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <input type="text" name="name" class="form-control" placeholder="Имя">
+        </div>
+        <div class="form-group col-md-6">
+          <input type="text" name="phone" class="form-control" placeholder="Телефон">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <input type="password" name="password" class="form-control" placeholder="Пароль">
+        </div>
+        <div class="form-group col-md-6">
+          <input type="password" name="password_repeat" class="form-control" placeholder="Повторите пароль">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Отправить</button>
+    </form>
+  </div>
+
+  <script src="js.js"></script>
+</body>
+</html>
