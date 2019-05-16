@@ -195,7 +195,28 @@ button:hover {
   transition: all 1s ease-out; }
   .product-cards__reset-btn:hover, .product-cards__like-btn:hover {
     background: #f16d7f; }
-
+.cart-product__minus {
+  color: #c0c0c0;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: all 0.7s ease-out;
+  cursor: pointer; }
+.cart-product__minus:hover {
+  color: #f16d7f; }
+.cart-product__plus {
+  color: #c0c0c0;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: all 0.7s ease-out;
+  cursor: pointer; }
+.cart-product__plus:hover {
+  color: #f16d7f; }
+.cart-product__amount {
+  color: #424044;
+  font-size: 14px;
+  font-weight: 500; }
 .product-cards__pic {
   transition: all 0.7s ease-out;
   width: 261px;
