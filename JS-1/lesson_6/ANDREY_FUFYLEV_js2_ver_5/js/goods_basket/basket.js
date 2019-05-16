@@ -26,7 +26,7 @@ class Basket {
                     <a href="${ this.basketItems[ i ].page_url }"><img src="${ this.basketItems[ i ].img_url }" alt="${ this.basketItems[ i ].product_name }" class="cart-product__pic"></a>
                     <div class="cart-product__content">
                         <h2 class="cart-product__headline">${ this.basketItems[ i ].product_name }</h2>
-                        <span class="cart-product__minus" data-id="${this.basketItems[i].id_good}"><i class="fas fa-minus"></i></span>&nbsp;&nbsp;
+                        <span class="cart-product__minus" data-id="${this.basketItems[i].id_product}"><i class="fas fa-minus"></i></span>&nbsp;&nbsp;
                         <span class="cart-product__amount">${ this.basketItems[ i ].product_amount } item(s)&nbsp;&nbsp;&nbsp;</span>
                         <span class="cart-product__plus" data-id="${this.basketItems[i].id_product}" data-name="${this.basketItems[i].product_name}" data-price="${this.basketItems[i].price}"><i class="fas fa-plus"></i></span>
                         <p class="cart-product__price">${ this.basketItems[ i ].price }&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total&nbsp;&nbsp;${ this.basketItems[ i ].totalSum }$</p>
@@ -82,7 +82,7 @@ class Basket {
                 for ( let key in data.basket ) {
                     this.basketItems.push( data.basket[ key ] );
                 }
-                console.log( `содержимое корзины для первоначального рендера`, this.basketItems );
+                //console.log( `содержимое корзины для первоначального рендера`, this.basketItems );
                 
                 this.render();// отрисовываем товар в корзину
                 $( "#cart-drop" ).hide();
@@ -136,7 +136,7 @@ class Basket {
                         "img_url": data[ index ].img_url,
                         "page_url": data[ index ].page_url
                     };
-                    console.log( `то что добавляем в корзину`, basketItem );
+                    //console.log( `то что добавляем в корзину`, basketItem );
                     this.basketItems.push( basketItem );
                     this.countGoods++;
                     this.totalPrice = parseInt( this.totalPrice ) + parseInt( data[ index ].price );
@@ -162,7 +162,28 @@ class Basket {
                 this.basketItems.splice( i, 1 );
             }
         }
-        console.log( `новый массив`, this.basketItems );
+        //console.log( `новый массив`, this.basketItems );
+        this.render();
+        
+    }
+    
+    subtract( idProduct ) {
+        
+        for ( let i = 0; i < this.basketItems.length; i++ ) {
+            console.log( `${ i } элемент в массиве`, this.basketItems[ i ].id_product );
+            let el = parseInt( this.basketItems[ i ].id_product );
+            if ( el === +idProduct ) {
+                //console.log( `удаляем ${ idProduct } из`, this.basketItems );
+                this.totalPrice -= this.basketItems[ i ].price;
+                this.countGoods--;
+                this.basketItems[ i ].product_amount--;
+                this.basketItems[ i ].totalSum -= this.basketItems[ i ].price;
+                if (this.basketItems[ i ].product_amount <=0 ) {
+                    this.basketItems.splice( i, 1 );
+                }
+            }
+        }
+        //console.log( `новый массив`, this.basketItems );
         this.render();
         
     }
@@ -180,7 +201,14 @@ class Basket {
             console.log( `нажал на добавление товара`, idProduct );
             th.add( idProduct );
         } );
-        //Удаление товара из корзину
+        // уменьшение кол-ва товара из корзины
+        $( document ).on( 'click', '.cart-product__minus', function () {
+            let idProduct = $( this ).attr( 'data-id' );
+            console.log( `нажал на кнопку уменьшения товара товара`, idProduct );
+            th.subtract( idProduct );
+        } );
+        
+        //Удаление товара из корзины
         $( document ).on( 'click', '.product-cards__reset-btn', function () {
             let idProduct = $( this ).attr( 'data-id' );
             console.log( `нажал на удаление товара`, idProduct );
