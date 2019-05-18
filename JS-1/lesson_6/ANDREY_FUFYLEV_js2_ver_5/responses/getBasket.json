@@ -1,0 +1,15 @@
+{
+  "total_price": 55,
+  "countGoods": 1,
+  "basket": [
+    {
+      "id_product": 2,
+      "product_name": "RUFFLE OFF SHOULDER",
+      "price": 55,
+      "product_amount": 1,
+      "totalSum": 55,
+      "img_url": "img/prod-2.png",
+      "page_url": "product_details.html"
+    }
+  ]
+}
