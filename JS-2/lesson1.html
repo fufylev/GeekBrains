@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="green">Click me!</div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<script>
+
+    // let, const
+
+    // ES5
+    // console.log(name5);
+    // var name5 = 'John';
+    // var age5 = 26;
+    // name5 = 'Sam';
+
+    // ES6
+    // console.log(name6);
+    // let age6 = 26;
+    // const name6 = 'John';
+    // // name6 = 'Sam';
+    // console.log(name6);
+
+    // ES5
+
+    // function passTest(result){
+    //     if(result){
+    //         var firstName = 'John';
+    //         var yearOfBirth = 1990;
+    //     }
+    //     console.log(`${firstName} рожденный в ${yearOfBirth} сдал тест`);
+    // }
+    //
+    // passTest(true);
+
+    // ES6
+
+    // function passTest(result){
+    //     let firstName;
+    //     let yearOfBirth;
+    //     if (result) {
+    //         firstName = 'John';
+    //         yearOfBirth = 1990;
+    //     }
+    //     console.log(`${firstName} рожденный в ${yearOfBirth} сдал тест`);
+    // }
+    //
+    // passTest(true);
+
+    // ES5
+
+    // var i = 23;
+    //
+    // for (var i = 0; i < 5; i++) {
+    //     console.log(i);
+    // }
+    //
+    // console.log(i);
+
+    // let i = 23;
+    //
+    // for (let i = 0; i < 5; i++) {
+    //     console.log(i);
+    // }
+    //
+    // console.log(i);
+
+    // Template literals
+
+    // let firstName = 'John';
+    // let lastName = 'Smith';
+    //
+    // let name = `${firstName} ${lastName}`;
+    //
+    // console.log(name);
+    // console.log(name.startsWith('j'));
+    // console.log(name.endsWith('ith'));
+    // console.log(name.includes('n S'));
+    // console.log(`${name} `.repeat(5));
+
+
+    // Arrow functions
+
+    //ES6
+
+    // const calcAge6 = x => 6 + x; // самый короткий синтаксис
+
+    // const calcAge6 = (x, y=5, z=10) => {
+    //     let b = 10 - y;
+    //     return 6 + b + z
+    // };
+    //
+    // console.log(calcAge6(3, 7));
+
+    // es5
+
+    // let box = {
+    //     color: 'green',
+    //     position: 1,
+    //     // clickMe: function(){}
+    //     clickMe() {
+    //         document.querySelector('.green').addEventListener('click', () => {
+    //             let str = `This is box number ${this.position} and it is ${this.color}`;
+    //             console.log(str);
+    //         });
+    //     }
+    // };
+    //
+    // box.clickMe();
+
+    // Деструктуризация
+
+    // ES5
+
+    // var arr = ['John', 26];
+    // var name = arr[0];
+    // var age = arr[1];
+
+    // ES6
+
+    // let arr = ['John', 26];
+    //
+    // let [name, age] = arr;
+    //
+    // console.log(name, age);
+
+    // let obj = {
+    //     firstName: 'John',
+    //     lastName: 'Smith',
+    //     colors: ['white', 'black'],
+    //     age: 26
+    // };
+    //
+    // let {firstName:c, age, colors: [a, b], lastName} = obj;
+    //
+    // console.log(c);
+    // console.log(a);
+    // console.log(b);
+    // console.log(age);
+    // console.log(lastName);
+
+    // let ret = year => {
+    //     const age = 2019 - year;
+    //     return [age, 65 - age];
+    // };
+    //
+    // let [curAge, retirement] = ret(1991);
+    // console.log(curAge);
+    // console.log(retirement);
+
+
+    // Spread operator
+
+    // let calcArgs = (a,b,c,d) => a+b+c+d;
+    //
+    // const arrNums = [2,8,5,12];
+
+    // ES5
+    // let sum1 = calcArgs.apply(null, arrNums);
+
+    // ES6
+    // let sum2 = calcArgs(...arrNums);
+    // console.log(sum1);
+
+
+    // let names1 = ['Ann', 'John', 'Bob'];
+    // let names2 = ['Mary', 'Tom', 'Sam'];
+    //
+    // let bigNames = [...names1, ...names2];
+    // console.log(bigNames);
+    
+    // let boxes = document.querySelectorAll('.box');
+    // // let boxesArr = Array.prototype.slice.call(boxes);
+    // // let boxesArr = Array.from(boxes);
+    // // let boxesArr2 = [...boxes];
+    // console.log(boxes);
+    // console.log(boxesArr);
+    // console.log(boxesArr2);
+
+
+    // Rest param
+
+    // ES5
+
+    // function isFullAge(limit) {
+    //     console.log(arguments);
+    //     let argArr = Array.prototype.slice.call(arguments, 1);
+    //     console.log(argArr);
+    // }
+    //
+    // isFullAge(21, 1990, 2019, 1980, 1976);
+
+    // let isFullAge = (limit, ...years) => {
+    //     console.log(years);
+    // };
+    // isFullAge(21, 1990, 2019, 1980, 1976);
+
+
+    // Maps
+
+    // let question = new Map();
+    // question.set('question', 'Какой стандарт JS сейчас является основным?')
+    //         .set(1, 'ES5')
+    //         .set(2, 'ES2')
+    //         .set(3, 'ES1')
+    //         .set(4, 'ES6')
+    //         .set('correct', 4)
+    //         .set(true, 'Success!')
+    //         .set(false, 'Wrong!');
+    //
+    // console.log(question.get('question'));
+    // // console.log(question.get(true));
+    // // console.log(question.has(4));
+    // // if(question.has(4)){
+    // //     question.delete(4);
+    // // }
+    // // question.clear();
+    //
+    // // question.keys() - только ключи
+    // // question.values() - только значения
+    // // question.entries() - ключи и значения в формате [ключ, значение]
+    // // for...in
+    // // for...of
+    // // let array = [1,2,3];
+    // // for (let element of array) {
+    // //     console.log(element);
+    // // }
+    // for(let [key, value] of question.entries()){
+    //     if(typeof key === 'number'){
+    //         console.log(`Answer ${key}: ${value}`)
+    //     }
+    // }
+    //
+    // let userAnswer = +prompt('Enter answer:');
+    // console.log(question.get(userAnswer === question.get('correct')));
+    // console.log(question);
+    // console.log(question.size);
+
+
+    // Sets
+
+    let set = new Set();
+
+    let user1 = {name: 'John'};
+    let user2 = {name: 'Sam'};
+    let user3 = {name: 'Ann'};
+    // obj !== obj
+
+    set.add(user1);
+    set.add(user2);
+    set.add(user3);
+    set.add(user1);
+    set.add(user1);
+    set.add(user2);
+    set.add(user3);
+    set.add(user2);
+    set.add(user3);
+    set.add(1);
+    set.add('Some');
+    set.add('Some');
+    set.add(1);
+    // set.add({name: 'John'});
+
+    // set.delete(user1);
+    // console.log(set.has(user1));
+    // set.clear();
+
+    console.log(set);
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
