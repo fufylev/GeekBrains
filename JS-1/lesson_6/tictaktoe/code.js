@@ -7,8 +7,8 @@
  * @param wonRequiredNumber (INT)- кол-во крестиков или ноликов надо набрать для выигрыша
  */
 let settings = {
-    box: 10, // кол-во рядов и столбцов
-    wonRequiredNumber: 5 // числе не должно превышать box
+    box: 6, // кол-во рядов и столбцов
+    wonRequiredNumber: 3 // числе не должно превышать box
 };
 
 /**
@@ -37,10 +37,12 @@ let ticTakToe = {
      * в зависиости от переменной wonRequiredNumber
      */
     crossesZerosFill() {
+        
         for ( let i = 0; i < settings.wonRequiredNumber; i++ ) {
             this.crosses += 'X';
             this.zeros += '0';
         }
+        console.log( this.crosses, this.zeros );
     },
     
     renderMap() {
@@ -137,60 +139,40 @@ let ticTakToe = {
      * @returns {boolean}
      */
     hasWon() {
-        let cumulativeByHorizontal = '', // накопленно по горизонтали
-        cumulativeByVertical = '', // накопленно по вертикали
-        cumulativeByDiagonal1 = '', // накопленно по диагонали слева-направо вниз
-        cumulativeByDiagonal2 = '', // накопленно по диагонали справа-налево вниз
-        cumulativeByDiagonal3 = '', // накопленно по диагонали справа-налево вверх
-        cumulativeByDiagonal4 = ''; // накопленно по диагонали слева-направо вверх
-        
+        let cumulativeByAllDirections = [ '', '', '', '', '', '' ];
+        let isValueInArr = false;
         // текущий цикл для проверки по горизонтали и вертикали и всем 4м диагонялям
         for ( let i = 0; i < settings.box; i++ ) {
             // по вертикали и горизонтали
             for ( let j = 0; j < settings.box; j++ ) {
-                cumulativeByHorizontal += this.mapValues[ i ][ j ];
-                cumulativeByVertical += this.mapValues[ j ][ i ];
+                cumulativeByAllDirections[ 0 ] += this.mapValues[ i ][ j ];
+                cumulativeByAllDirections[ 1 ] += this.mapValues[ j ][ i ];
             }
             // по диагоняли со всех 4-х углов
             let x = i, y = 0; // дополнительные переменные
             for ( let j = 0; j <= i; j++ ) {
-                cumulativeByDiagonal1 += this.mapValues[ x ][ y ];
-                cumulativeByDiagonal2 += this.mapValues[ x ][ settings.box - 1 - y ];
-                cumulativeByDiagonal3 += this.mapValues[ settings.box - 1 - x ][ settings.box - 1 - y ];
-                cumulativeByDiagonal4 += this.mapValues[ settings.box - 1 - x ][ y ];
+                cumulativeByAllDirections[ 2 ] += this.mapValues[ x ][ y ];
+                cumulativeByAllDirections[ 3 ] += this.mapValues[ x ][ settings.box - 1 - y ];
+                cumulativeByAllDirections[ 4 ] += this.mapValues[ settings.box - 1 - x ][ settings.box - 1 - y ];
+                cumulativeByAllDirections[ 5 ] += this.mapValues[ settings.box - 1 - x ][ y ];
                 x--;
                 y++;
             }
             
-            if ( this.isLineWon( cumulativeByHorizontal, cumulativeByVertical,
-                cumulativeByDiagonal1, cumulativeByDiagonal2,
-                cumulativeByDiagonal3, cumulativeByDiagonal4 ) ) {
-                return true;
+            for ( let index = 0; index < 6; index++ ) {
+                if ( ~cumulativeByAllDirections[ index ].indexOf( this.crosses ) ||
+                    ~cumulativeByAllDirections[ index ].indexOf( this.zeros ) ) {
+                    isValueInArr = true;
+                }
+            }
+            
+            if (isValueInArr) {
+                return true
             } else {
-                cumulativeByHorizontal = '';
-                cumulativeByVertical = '';
-                cumulativeByDiagonal1 = '';
-                cumulativeByDiagonal2 = '';
-                cumulativeByDiagonal3 = '';
-                cumulativeByDiagonal4 = '';
+                cumulativeByAllDirections = [ '', '', '', '', '', '' ]
             }
         }
         return false;
-    },
-    
-    /**
-     * Проверяем на вхождение
-     * @returns {number}
-     */
-    isLineWon( h, v, d1, d2, d3, d4 ) {
-        return (
-            ~h.indexOf( this.crosses ) || ~h.indexOf( this.zeros ) ||
-            ~v.indexOf( this.crosses ) || ~v.indexOf( this.zeros ) ||
-            ~d1.indexOf( this.crosses ) || ~d1.indexOf( this.zeros ) ||
-            ~d2.indexOf( this.crosses ) || ~d2.indexOf( this.zeros ) ||
-            ~d3.indexOf( this.crosses ) || ~d3.indexOf( this.zeros ) ||
-            ~d4.indexOf( this.crosses ) || ~d4.indexOf( this.zeros )
-        );
     },
 };
 
