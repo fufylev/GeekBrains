@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <p>Выберите гамбургер</p>
+    <div>
+        <input class="choose-burger" type="radio" id="small-burger" name="size" value="small" data-price="50"
+               data-calories="20" checked>
+        <label for="small-burger">Маленький гамбургер</label>
+
+        <input class="choose-burger" type="radio" id="big-burger" name="size" value="big" data-price="100"
+               data-calories="40">
+        <label for="big-burger">Большой гамбургер</label>
+    </div>
+    <p>Выберите начинку</p>
+    <div>
+        <input class="choose-burger" type="radio" id="cheese-topping" name="topping" value="cheese"
+               data-price="10" data-calories="20" checked>
+        <label for="cheese-topping">С сыром</label>
+
+        <input class="choose-burger" type="radio" id="potato-topping" name="topping" value="potato"
+               data-price="15" data-calories="10">
+        <label for="potato-topping">С картофелем</label>
+
+        <input class="choose-burger" type="radio" id="salad-topping" name="topping" value="salad"
+               data-price="20" data-calories="5">
+        <label for="salad-topping">С салатом</label>
+    </div>
+    <p>Добавки</p>
+    <div>
+        <input class="choose-burger" type="checkbox" id="add-spices" name="adds" value="spices"
+               data-price="15" data-calories="0">
+        <label for="add-spices">Приправа</label>
+
+        <input class="choose-burger" type="checkbox" id="add-mayo" name="adds" value="mayonnaise"
+               data-price="20" data-calories="5">
+        <label for="add-mayo">Майонез</label>
+    </div>
+</form>
+<div>
+    <p>Стоимость: <span id="price"></span></p>
+    <p>Калорийность: <span id="calorific"></span></p>
+</div>
+<script src="js.js"></script>
+</body>
+</html>
