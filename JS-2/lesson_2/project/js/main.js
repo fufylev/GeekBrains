@@ -10,10 +10,10 @@ class correctEndOfWord {
     
     static operation( value, words ) {
         return declOfNum( value, words );
-        
-        function declOfNum( number, words ) {
+    
+        function declOfNum( value, words ) {
             let cases = [ 2, 0, 1, 1, 1, 2 ];
-            return words[ ( number % 100 > 4 && number % 100 < 20 ) ? 2 : cases[ ( number % 10 < 5 ) ? number % 10 : 5 ] ];
+            return words[ ( value % 100 > 4 && value % 100 < 20 ) ? 2 : cases[ ( value % 10 < 5 ) ? value % 10 : 5 ] ];
         }
     }
 }
@@ -32,6 +32,7 @@ class ProductsList {
         this._fetchProducts();
         this._render();
         this._totalPriceAll();
+        this._eventHandlerForButtons();
     }
     
     _fetchProducts() {
@@ -63,6 +64,16 @@ class ProductsList {
                         на сумму ${ this.totalPrice }  ${ correctEndOfWord.operation( this.totalPrice, [ 'рубль', 'рубля', 'рублей' ] ) }
                       </div> `;
         block.insertAdjacentHTML( 'afterend', outlet );
+    }
+    
+    /**
+     * Метод навешивания обработчика на кнопки в карточках товаров - я проверил - всё работает
+     */
+    _eventHandlerForButtons() {
+        const addBtn = document.querySelectorAll( '.buy-btn' );
+        for ( let i = 0; i < addBtn.length; i++ ) {
+            addBtn[ i ].addEventListener( 'click', event => cart.increment( +event.target.dataset.id ) );
+        }
     }
 }
 
@@ -99,7 +110,6 @@ class Cart {
     init() {
         this._fetchItems();
         this._render(); // отрисовываем корзину
-        this._eventHandlerForButtons();
     }
     
     /**
@@ -134,16 +144,6 @@ class Cart {
      * @param id
      */
     remove( id ) {
-    }
-    
-    /**
-     * Метод навешивания обработчика на кнопки в карточках товаров - я проверил - всё работает
-     */
-    _eventHandlerForButtons() {
-        const addBtn = document.querySelectorAll( '.buy-btn' );
-        for ( let i = 0; i < addBtn.length; i++ ) {
-            addBtn[ i ].addEventListener( 'click', event => this.increment( +event.target.dataset.id ) );
-        }
     }
     
 }
