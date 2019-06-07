@@ -1,0 +1,58 @@
+[
+  {
+    "id_product": 1,
+    "product_name": "MANGO PEOPLE T-SHIRT",
+    "price": 50,
+    "img_url": "img/prod-1.png",
+    "page_url": "product_details.html"
+  },
+  {
+    "id_product": 2,
+    "product_name": "RUFFLE OFF SHOULDER",
+    "price": 55,
+    "img_url": "img/prod-2.png",
+    "page_url": "product_details.html"
+  },
+  {
+    "id_product": 3,
+    "product_name": "MANGO PEOPLE T-SHIRT",
+    "price": 60,
+    "img_url": "img/prod-3.png",
+    "page_url": "product_details.html"
+  },
+  {
+    "id_product": 4,
+    "product_name": "GIGI BRUSHED TOP",
+    "price": 55,
+    "img_url": "img/prod-4.png",
+    "page_url": "product_details.html"
+  },
+  {
+    "id_product": 5,
+    "product_name": "MANGO PEOPLE T-SHIRT",
+    "price": 70,
+    "img_url": "img/prod-5.png",
+    "page_url": "product_details.html"
+  },
+  {
+    "id_product": 6,
+    "product_name": "MANGO PEOPLE T-SHIRT",
+    "price": 72,
+    "img_url": "img/prod-6.png",
+    "page_url": "product_details.html"
+  },
+  {
+    "id_product": 7,
+    "product_name": "MANGO PEOPLE T-SHIRT",
+    "price": 45,
+    "img_url": "img/prod-7.png",
+    "page_url": "product_details.html"
+  },
+  {
+    "id_product": 8,
+    "product_name": "MANGO PEOPLE T-SHIRT",
+    "price": 80,
+    "img_url": "img/prod-8.png",
+    "page_url": "product_details.html"
+  }
+]
