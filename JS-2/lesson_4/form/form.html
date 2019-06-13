@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+<!--
+3. *Создать форму обратной связи с полями: Имя, Телефон, E-mail, текст, кнопка Отправить.
+При нажатии на кнопку Отправить произвести валидацию полей следующим образом:
+a. Имя содержит только буквы.
+b. Телефон имеет вид +7(000)000-0000.
+c. E-mail имеет вид mymail@mail.ru, или my.mail@mail.ru, или my-mail@mail.ru.
+d. Текст произвольный.
+e. Если одно из полей не прошло валидацию, необходимо выделить это поле красной рамкой и сообщить пользователю об ошибке.-->
+
+<div class="form-wrap">
+    <form class="my-form" action="" autocomplete="off">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="Имя">
+            </div>
+            <div class="form-group col-md-6">
+                <input type="text" name="phone" class="form-control" placeholder="Телефон в формате: +7(000)000-0000">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <input type="email" name="email" class="form-control" placeholder="Введите e-mail">
+            </div>
+            <div class="form-group col-md-6">
+                <input type="text" name="text" class="form-control" placeholder="Введите сообщение">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Отправить</button>
+    </form>
+</div>
+
+<script src="form.js"></script>
+
+</body>
+</html>
