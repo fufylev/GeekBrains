@@ -5,16 +5,9 @@
  * @returns {*} - возвращаем слово с правильным окончанием
  */
 class correctEndOfWord {
-    constructor() {
-    }
-    
     static operation( value, words ) {
-        return declOfNum( value, words );
-    
-        function declOfNum( value, words ) {
-            let cases = [ 2, 0, 1, 1, 1, 2 ];
-            return words[ ( value % 100 > 4 && value % 100 < 20 ) ? 2 : cases[ ( value % 10 < 5 ) ? value % 10 : 5 ] ];
-        }
+        let cases = [ 2, 0, 1, 1, 1, 2 ];
+        return words[ ( value % 100 > 4 && value % 100 < 20 ) ? 2 : cases[ ( value % 10 < 5 ) ? value % 10 : 5 ] ];
     }
 }
 

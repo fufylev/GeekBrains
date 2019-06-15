@@ -171,7 +171,7 @@ class Cart {
             block.insertAdjacentHTML( 'beforeend', prod.render() );
         }
         let outlet = `<div>В корзине <span class="red">${ this.countGoods }</span>  ${ CorrectEndOfWord.operation( this.countGoods, [ 'товар', 'товара', 'товаров' ] ) }
-                        на сумму <span class="red">${ this.totalPrice } </span>  ${ CorrectEndOfWord.operation( this.totalPrice, [ 'рубль', 'рубля', 'рублей' ] ) }
+                       <br> на сумму <span class="red">${ this.totalPrice } </span>  ${ CorrectEndOfWord.operation( this.totalPrice, [ 'рубль', 'рубля', 'рублей' ] ) }
                       </div> `;
         block.insertAdjacentHTML( 'beforeend', outlet );
     }

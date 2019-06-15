@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .block{
+            width: 200px;
+            height: 200px;
+            background-color: #c0c0c0;
+        }
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+
+    <div class="products">
+        <div class="product" v-for="item of products">
+            <img :src="item.img">
+            <div class="desc">
+                <p>{{ item.title }}</p>
+                <p>{{ item.price * item.quantity }}</p>
+                <p>{{ item.quantity }}</p>
+                <button @click="item.quantity++">Buy</button>
+            </div>
+        </div>
+        <button @click="addProduct">AddProduct</button>
+    </div>
+
+    <p v-if="show">I'm visible</p>
+    <p v-else>
+        <strong>Now i'm visible</strong>
+    </p>
+    <p>Static</p>
+    <p v-show="show">Styled</p>
+    <button @click="show = !show">Switch</button>
+
+
+    <!--<div class="block" :class="{red: isRed, blue: !isRed}" @click="isRed = !isRed"></div>-->
+    <div class="block" :class="divClasses" @click="isRed = !isRed"></div>
+    <!--<div class="block" :style="{backgroundColor: color}"></div>-->
+    <div class="block" :style="myStyle"></div>
+    <input type="text" v-model="color">
+    <input type="text" v-model="width">
+
+    <h2 v-once>{{ title }}</h2>
+    <strong>{{ sayHello() }}</strong>
+    <!--<a v-bind:href="link">Google</a>-->
+    <a :href="link">Google</a>
+    <div v-html="completeEl"></div>
+
+    <div class="counter">
+        <!--<button v-on:click="increase">Increase</button>-->
+        <button @click="counter += 2">Increase</button>
+        <p>{{ counter }}</p>
+        <p>{{ counter < 5 ? 'Less than 5' : 'Greater than 5' }}</p>
+        <p @mousemove="getCoordinates">Some long-long string {{x}} / {{y}} -
+            <strong @mousemove.stop="">NO COORDINATES</strong>
+        </p>
+        <input type="text" v-model.lazy="name">
+        <p>{{name}}</p>
+        <button @click="counter++">Increase</button>
+        <button @click="counter--">Decrease</button>
+        <button @click="counterSecond++">IncreaseSecond</button>
+        <p>Counter: {{counter}} | {{counterSecond}}</p>
+        <p>Result: {{result()}} | {{output}}</p>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            show: true,
+            title: 'Hello World!',
+            link: 'https://google.com',
+            completeEl: `<a href="https://google.com">Google Complete</a>`,
+            counter: 0,
+            x: 0,
+            y: 0,
+            name: 'John',
+            counterSecond: 0,
+            isRed: false,
+            color: 'green',
+            width: 200,
+            products: [
+                {img: `https://placehold.it/200x150`, title: 'Notebook', price: 2000, quantity: 1},
+                {img: `https://placehold.it/200x150`, title: 'Chair', price: 200, quantity: 1},
+                {img: `https://placehold.it/200x150`, title: 'Mouse', price: 120, quantity: 1},
+            ]
+        },
+        computed: {
+            output(){
+                console.log('computed');
+                return this.counter < 5 ? 'Less than 5' : 'Greater than 5';
+            },
+            divClasses(){
+                return {
+                    red: this.isRed,
+                    blue: !this.isRed
+                }
+            },
+            myStyle(){
+                return {
+                    backgroundColor: this.color,
+                    width: `${this.width}px`,
+                    height: `${this.width}px`,
+                }
+            }
+        },
+        methods: {
+            sayHello(){
+                this.title = 'Foo';
+                return this.title;
+            },
+            increase(step, event){
+                console.log(event);
+                this.counter += step;
+            },
+            getCoordinates(){
+                this.x = event.clientX;
+                this.y = event.clientY;
+            },
+            result(){
+                console.log('method');
+                return this.counter < 5 ? 'Less than 5' : 'Greater than 5';
+            },
+            addProduct(){
+                this.products.push({img: `https://placehold.it/200x150`, title: 'Keyboard', price: 200, quantity: 1})
+            }
+        }
+    })
+</script>
+</body>
+</html>

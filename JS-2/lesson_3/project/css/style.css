@@ -112,8 +112,8 @@ p {
 .basket__list {
     position: absolute;
     top: 38px;
-    right: -85px;
-    width: 240px;
+    right: -75px;
+    width: 270px;
     border: 1px solid #ccc;
     background-color: #fff;
     z-index: 100;
@@ -129,7 +129,7 @@ p {
     height: 10px;
     background-color: #fff;
     top: -6px;
-    right: 130px;
+    right: 120px;
     transform: rotate(45deg);
     border-top: 1px solid #ccc;
     border-left: 1px solid #ccc;
