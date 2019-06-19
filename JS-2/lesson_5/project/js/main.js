@@ -18,10 +18,11 @@ const app = new Vue( {
         isCartFull: false,
         cartProductsCount: 0,
         cartProductsSum: 0,
-        countDeclination: '',
-        priceDeclination: '',
         imgCatalog: `https://placehold.it/200x150`,
         imgCart: `https://placehold.it/50x70`,
+    },
+    computed: {
+    
     },
     methods: {
         getJson( url ) {
