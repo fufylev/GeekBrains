@@ -1,0 +1,56 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.94rem;
+
+}
+
+.main-content {
+  width: 53.75rem;
+  height: 60rem;
+  border: 1px solid #ccc;
+
+  &__heading {
+    color: #444645;
+    //font-family: Oswald;
+    font-size: 2.625rem;
+    font-weight: 400;
+    //line-height: 1.063rem;
+    padding-left: 1rem;
+    border-left: 0.25rem solid #7bae23;
+  }
+
+  &__text {
+    color: #999999;
+    font-family: "PT Sans";
+    font-size: 1.063rem;
+    font-weight: 400;
+    //line-height: 1.063rem;
+  }
+
+  &__bar {
+    margin-top: 2rem;
+
+    &-link {
+      padding: 11px 40px 9px 37px;
+      background: #575a59;
+      color: #ffffff;
+      font-family: "PT Sans";
+      font-size: 0.875rem;
+      font-weight: 700;
+      line-height: 1.063rem;
+      text-transform: uppercase;
+
+      &_green {
+        background-color: #84bb26;
+      }
+    }
+  }
+
+}
+
+.sidebar {
+  width: 16rem;
+  height: 60rem;
+  border: 1px solid #ccc;
+}

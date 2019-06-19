@@ -1,0 +1,274 @@
+.sidebar {
+  width: 16.875rem;
+  //height: 60rem;
+  margin: 4rem auto;
+}
+
+.block {
+  //width: 16.875rem;
+  height: 23.125rem;
+  border: 0.063rem solid #dcdcdc;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  border-radius: 0.2rem;
+  margin-bottom: 4.5rem;
+
+  &__heading {
+    width: 11.688rem;
+    color: #444645;
+    font-family: Oswald;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 2.188rem;
+    text-transform: uppercase;
+    margin: 2.25rem 0 1.75rem 0;
+    text-align: center;
+  }
+
+  &__text {
+    width: 13.75rem;
+    //height: 5.125rem;
+    color: #838383;
+    //font-family: "Arial MT";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.378rem;
+    text-align: center;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    &-email {
+      width: 14.25rem;
+      height: 2.25rem;
+      border: 0.063rem solid #e0e0e0;
+      background-color: #fafafa;
+      text-align: center;
+      color: #a3a4a1;
+      //font-family: "Arial MT";
+      font-size: 0.938rem;
+      font-weight: 400;
+      line-height: 1.375rem;
+      border-radius: 0.2rem;
+      margin: 1.25rem 0 1.25rem 0;
+    }
+    &-submit {
+      width: 7.5rem;
+      height: 2.813rem;
+      //box-shadow: inset 0 0.063rem 0.063rem rgba(255, 255, 255, 0.75);
+      border: 0.063rem solid #82b825;
+      background-color: #84bb26;
+      border-radius: 0.3rem;
+      color: #ffffff;
+      //font-family: "Arial MT";
+      font-size: 1.063rem;
+      font-weight: 400;
+      line-height: 1.375rem;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.4s ease-in-out;
+      &:hover {
+        border: 0.063rem solid #82b825;
+        background-color: #ffffff;
+        color: #82b825;
+      }
+    }
+  }
+}
+
+.testimonials {
+  margin-bottom: 4.5rem;
+  &__slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    //width: 18.75rem;
+  }
+  &__text {
+    color: #444645;
+    font-family: Oswald;
+    font-size: 1.563rem;
+    font-weight: 400;
+    line-height: 1.313rem;
+    text-transform: uppercase;
+  }
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 5.45rem;
+  }
+  &__next, &__prev {
+    padding: 0.3rem 1rem;
+    border: 0.063rem solid #e0e0e0;
+    background-color: #fafafa;
+    color: #9f9f9f;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      border: 0.063rem solid #e0e0e0;
+      background-color: #84bb26;
+      color: #fafafa;
+    }
+  }
+  &__block {
+    //width: 18.75rem;
+    &-content {
+      //width: 16.875rem;
+      height: 12.188rem;
+      box-shadow: inset 0 0.063rem 0.063rem rgba(255, 255, 255, 0.95);
+      border: 0.063rem solid #dcdcdc;
+      background-color: #f6f6f6;
+      margin: 1.3125rem 0 1.75rem 0;
+      padding: 1.375rem 0.6875rem 1.375rem 0.6875rem;
+      position: relative;
+      z-index: 0;
+      &_arrow {
+        position: absolute;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: #f6f6f6;
+        bottom: -0.81rem;
+        left: 3rem;
+        transform: rotate(12deg) skewy(-50deg);
+        border-bottom: 1px solid #dcdcdc;
+        border-left: 1px solid #dcdcdc;
+        z-index: 9999;
+      }
+    }
+    &-heading {
+      color: #757978;
+      font-family: "PT Sans bold";
+      font-size: 1.438rem;
+      font-weight: 700;
+      line-height: 1.313rem;
+    }
+    &-quote {
+      text-shadow: 0 0.063rem 0 #ffffff;
+      color: #d8d7d7;
+      font-family: Rokkitt;
+      font-weight: 400;
+      line-height: 1.313rem;
+    }
+    &-text {
+      color: #8f9290;
+      //font-family: "Arial MT";
+      font-size: 0.938rem;
+      font-weight: 400;
+      line-height: 1.313rem;
+      padding-left: 2.3rem;
+    }
+    &-img {
+      background-image: url("img/icons/user.png");
+      background-repeat: no-repeat;
+      width: 4.375rem;
+      height: 4.375rem;
+      background-color: #dcdcdc;
+      background-position: center;
+    }
+    &-user {
+      display: flex;
+      justify-content: start;
+      &_data {
+        margin-left: 2rem;
+      }
+      &_name {
+        color: #84bb26;
+        font-family: "PT Sans";
+        font-size: 1rem;
+        font-weight: 700;
+        font-style: italic;
+        line-height: 1.313rem;
+      }
+      &_date {
+        color: #bdbdbd;
+        //font-family: "Arial - Italic MT";
+        font-style: italic;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.313rem;
+      }
+    }
+  }
+}
+.shipping {
+  //width: 16.875rem;
+  height: 25rem;
+  box-shadow: inset 0 0.063rem 0.063rem rgba(255, 255, 255, 0.95);
+  border: 0.063rem solid #dcdcdc;
+  background-color: #fafafa;
+  display: flex!important;
+  flex-direction: column!important;
+  align-items: center!important;
+  padding: 1.56rem auto;
+  text-align: center;
+  border-radius: 0.2rem;
+  &__heading {
+    color: #84bb26;
+    font-family: "PT Sans bold";
+    font-size: 3.75rem;
+    font-weight: 700;
+    //line-height: 1.5rem;
+    text-transform: uppercase;
+  }
+  &__text {
+    color: #444645;
+    font-family: "PT Sans bold";
+    font-size: 2.375rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+  }
+  &__price {
+    margin: 1rem 0 2rem 0;
+    color: #676a69;
+    font-family: "PT Sans bold";
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1rem;
+    &-green {
+      color: #a8bf00;
+    }
+  }
+  &__truck {
+
+  }
+  &__content {
+    width: 12.25rem;
+    margin-top: 2rem;
+    color: #838383;
+    //font-family: "Arial MT";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.188rem;
+  }
+}
+
+.slick-dots {
+  bottom: 7px!important;
+}
+.slick-dots li button:before  {
+  font-size: 2rem;
+  color: #ccc;
+  opacity: 1;
+}
+/*.slick-dots li button:hover:before {
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}*/
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #84bb26!important;
+}
+
+@media screen and (min-width: 320px) and (max-width: 724px){
+  .sidebar {
+    width: 21rem;
+  }
+}

@@ -1,0 +1,791 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&subset=latin-ext');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-family: Lato;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+
+}
+
+.wrapper {
+    width: 1600px;
+    margin: 0 auto;
+    background: url(../img/background.png);
+}
+.flexible,
+.flexible-header {
+    /*set flex for following blocks*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left,
+.header-right,
+.center,
+.search,
+.bottom-menu,
+.bottom-menu-1-header {
+    display: flex;
+    align-items: center;
+}
+
+
+/*CSS for HEADER start*/
+
+header {
+    border: 1px solid #ececec;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    height: 100px;
+}
+
+.flexible-header {
+    height: 100px;
+}
+
+.header-left a {
+    font-family: Lato;
+    color: #222222;
+    font-size: 27px;
+    font-weight: 300;
+    line-height: 32px;
+    text-align: center;
+}
+
+.header-left span {
+    font-family: Lato;
+    color: #f16d7f;
+    font-size: 27px;
+    font-weight: 900;
+    line-height: 32px;
+    text-align: center;
+}
+
+.logo {
+    margin-left: 13px;
+}
+
+.account {
+    margin-left: 26px;
+}
+
+.account a {
+    background-color: #f16d7f;
+    padding: 13px 19px 11px 19px;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 32px;
+    /* Text style for "M, y Accou" */
+    letter-spacing: 0.38px;
+}
+
+.search {
+    /*	border: 0.5px solid #e6e6e6;*/
+    margin-left: 20px;
+    outline: 0;
+}
+
+.browse span {
+    font-family: Lato;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 3px 5px 0px 15px;
+    background: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
+    height: 38px;
+    display: block;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+}
+
+.submit {
+    outline: 0;
+    display: block;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    width: 38px;
+    height: 38px;
+    position: relative;
+}
+
+.submit-sign {
+    background: url(../img/search-button.png) no-repeat;
+    width: 14px;
+    height: 14px;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 9px;
+}
+
+.input {
+    padding-left: 10px;
+    display: block;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    width: 279px;
+    height: 38px;
+}
+
+
+/*CSS for HEADER end*/
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    /*	border: 0.5px solid black;*/
+}
+
+
+/*CSS for MENU start*/
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu .current {
+    border-bottom: 3px solid #f16d7f;
+}
+
+.menu a {
+    font-family: Lato;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 19px 19px 22px 19px;
+    display: block;
+}
+
+.menu a:hover {
+    color: #f16d7f;
+}
+
+.menu .current:hover {
+    color: #000;
+}
+
+
+/*CSS for MENU end*/
+
+
+/*Smiling MAN start*/
+
+.cool-man {
+    background: #e8e8e8;
+    height: 614px;
+}
+
+.man-photo {
+    background: url("../img/cool-man.png");
+    height: 614px;
+    display: flex;
+    align-items: center;
+}
+
+.cool-man-header {
+    border-left: 12px solid #f16d7f;
+    padding-left: 15px;
+}
+
+.cool-man-header h2 {
+    font-family: Lato;
+    color: #222222;
+    font-size: 59.95px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+    /*	text-align: right;*/
+}
+
+.cool-man-header h3 {
+    font-family: Lato;
+    color: #222222;
+    font-size: 39.96px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+    /*	text-align: right;*/
+}
+
+.cool-man-header span {
+    font-family: Lato;
+    color: #f16d7f;
+    font-size: 39.96px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+    /*	text-align: right;*/
+    transform: scaleY(1.0009);
+}
+
+
+/*Smiling MAN end*/
+
+
+/*CSS for center block START*/
+
+.center {
+    margin-top: 98px;
+}
+
+.center-left-top {
+    width: 560px;
+    height: 542px;
+    background: url(../img/center-1.png);
+    margin-bottom: 20px;
+    padding-top: 26px;
+}
+
+.center-left-bottom {
+    background: #dadad2;
+    width: 560px;
+    height: 261px;
+    padding-top: 26px;
+    display: flex;
+    position: relative;
+}
+
+.center-right-top {
+    width: 560px;
+    height: 261px;
+    background: url(../img/center-3.png);
+    margin-bottom: 20px;
+    padding-top: 26px;
+}
+
+.center-right-bottom {
+    width: 560px;
+    height: 542px;
+    background: url(../img/center-4.png);
+    padding-top: 26px;
+}
+
+.center-left {
+    margin-right: 21px;
+}
+
+.pocket {
+    background: url(../img/center-2.png);
+    width: 411px;
+    height: 240px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.center-header-man,
+.center-header-ACCESORIES,
+.center-header-women,
+.center-header-kids {
+    background-color: #ffffff;
+    width: 175px;
+    height: 82px;
+    padding: 16px 0 16px 19px;
+}
+
+.center-header-ACCESORIES {
+    width: 228px;
+    position: relative;
+    z-index: 1;
+}
+
+.center-header-women {
+    width: 165px;
+}
+
+.center-header-kids {
+    width: 180px;
+}
+
+.center h2 {
+    font-family: Lato;
+    color: #222222;
+    font-size: 18px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.center h3 {
+    font-family: Lato;
+    color: #f16d7f;
+    font-size: 30px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+
+/*CSS for center block END*/
+
+
+/* Fetured Items START*/
+
+.fetured-items {
+    padding-top: 100px;
+    height: 211px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.fetured-items-center h2 {
+    font-family: Lato;
+    color: #222222;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+    text-align: center;
+}
+
+.fetured-items-center h3 {
+    font-family: Lato;
+    color: #9f9f9f;
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    font-weight: 400;
+    line-height: 54px;
+    text-align: center;
+}
+
+
+/* Fetured Items END*/
+
+
+/*poduct examples START*/
+
+.product {
+    /* Style for "Shadow" */
+    width: 263px;
+    height: 364px;
+    background-color: #ffffff;
+    /*	border: 0.5px solid black;*/
+    margin-bottom: 39px;
+    position: relative;
+    z-index: 3;
+}
+
+.product:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product h2 {
+    color: #222222;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.product h3 {
+    color: #f16d7f;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.product figcaption {
+    padding: 15px;
+}
+
+.product figure img {
+    width: 100%;
+    height: 279px;
+}
+
+.browse-all-product {
+    padding-top: 79px;
+    height: 240px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.browse-all-product a {
+    font-family: Lato;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #f16d7f;
+    display: block;
+    padding: 18px 19px 19px 24px;
+    letter-spacing: 0.4px;
+}
+
+.browse-all-product a:after {
+    content: "→";
+}
+
+
+/*poduct examples END*/
+
+
+/*bottom advertisement START*/
+
+.bottom-advertise {
+    width: 1140px;
+    height: 529px;
+    background-color: #222224;
+}
+
+.bottom-advertise-left {
+    background: url(../img/bottom-advert-img.png) no-repeat;
+    width: 767px;
+    height: 529px;
+}
+
+.bottom-advertise-left-bg {
+    background: url(../img/bottom-advert-img-bg.png) no-repeat;
+    width: 767px;
+    height: 529px;
+    padding: 146px 0 0 39px;
+}
+
+.bottom-advertise-left-bg h2 {
+    font-family: Lato;
+    color: #ffffff;
+    font-size: 53.62px;
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: 1.5px;
+}
+
+.bottom-advertise-left-bg span {
+    color: #f16d7f;
+}
+
+.bottom-advertise-left-bg h3 {
+    font-family: Lato;
+    color: #ffffff;
+    font-size: 32.17px;
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: 0.9px;
+}
+
+.bottom-advertise-right-top,
+.bottom-advertise-right-mid,
+.bottom-advertise-right-bot {
+    width: 373px;
+    padding: 55px 23px 0 114px;
+    position: relative;
+}
+
+.bottom-advertise-right-top {
+    height: 170px;
+}
+
+.bottom-advertise-right-mid {
+    height: 170px;
+    padding: 45px 23px 0 114px;
+}
+
+.bottom-advertise-right-bot {
+    height: 188px;
+    padding: 45px 23px 0 114px;
+}
+
+.bottom-advertise-right-top img {
+    position: absolute;
+    top: 48px;
+    left: 36px;
+}
+
+.bottom-advertise-right-mid img {
+    position: absolute;
+    top: 38px;
+    left: 36px;
+}
+
+.bottom-advertise-right-bot img {
+    position: absolute;
+    top: 38px;
+    left: 36px;
+}
+
+.bottom-advertise-right h2 {
+    color: #fbfbfb;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    display: block;
+    padding-bottom: 15px;
+}
+
+.bottom-advertise-right h3 {
+    color: #fbfbfb;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.35px;
+}
+
+
+/*bottom advertisement END*/
+
+
+/*style for subscribe form START*/
+
+.view {
+    margin-top: 97px;
+    background: url(../img/subscribe-bg.png) no-repeat;
+    height: 438px;
+}
+
+.view-bg {
+    background-color: rgba(242, 242, 242, 0.5);
+    height: 438px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.subscribe-left {
+    width: 800px;
+    height: 438px;
+    border-right: 1px solid white;
+    padding: 123px 73px 0 341px;
+}
+
+.subscribe-left h2 {
+    color: #222224;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 26px;
+    /* Text style for "“, Vestibu" */
+    letter-spacing: 0.4px;
+}
+
+.subscribe-left h3 {
+    font-family: Lato;
+    color: #f16d7f;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    letter-spacing: 0.4px;
+    line-height: 26px;
+}
+
+.subscribe-left h4 {
+    font-family: Lato;
+    color: #222224;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    text-align: left;
+    letter-spacing: 0.3px;
+    line-height: 14px;
+}
+
+.subscribe-left img {
+    position: absolute;
+    top: 111px;
+    left: 230px;
+}
+
+.subscribe-right {
+    width: 800px;
+    height: 438px;
+}
+
+.subscribe-right-text {
+    padding: 148px 0px 0 92px;
+    text-align: center;
+    width: 500px;
+}
+
+.subscribe-right-text h2 {
+    color: #222224;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
+.subscribe-right-text h3 {
+    font-family: Lato;
+    color: rgba(34, 34, 36, 0.67);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+.subscribe-right-text input {
+    display: inline-block;
+    height: 46px;
+    outline: 0;
+    box-shadow: none;
+}
+
+.subscribe-right-text input[type="email"] {
+    width: 334px;
+    padding-left: 28px;
+    color: #222224;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    background: #e1e1e1;
+    letter-spacing: 0.35px;
+    border-bottom-left-radius: 23px;
+    border-top-left-radius: 23px;
+}
+
+.subscribe-right-text input[type="submit"] {
+    width: 104px;
+    margin-left: -52px;
+    margin-top: 35px;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+    border-radius: 0 23px 23px 0;
+    background: #f16d7f;
+}
+
+
+/*style for subscribe form END*/
+
+.bottom-menu {
+    margin-top: 129px;
+}
+
+.bottom-menu-1 {
+    width: 427px;
+    height: 240px;
+    margin-right: 63px;
+    position: relative;
+}
+
+.bottom-menu-1 article {
+    color: #898989;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.35px;
+}
+
+.bottom-menu-1-header {
+    margin-top: -20px;
+    margin-bottom: 19px;
+}
+
+.bottom-menu-1-header a {
+    font-family: Lato;
+    color: #222222;
+    font-size: 27px;
+    font-weight: 300;
+    line-height: 32px;
+    text-align: center;
+}
+
+.bottom-menu-1-header span {
+    font-family: Lato;
+    color: #f16d7f;
+    font-size: 27px;
+    font-weight: 900;
+    line-height: 32px;
+    text-align: center;
+}
+
+.bottom-menu-2 {
+    width: 105px;
+    height: 240px;
+    margin-right: 137px;
+}
+
+.bottom-menu-3 {
+    width: 155px;
+    height: 240px;
+    margin-right: 92px;
+}
+
+.bottom-menu-4 {
+    width: 155px;
+    height: 240px;
+}
+
+.bottom-menu-col h2 {
+    font-family: Lato;
+    color: #f16d7f;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.bottom-menu-col a {
+    color: #898989;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    letter-spacing: 0.4px;
+    line-height: 46px;
+}
+
+footer {
+    height: 79px;
+    margin-top: 97px;
+    background-color: #e6e6e6;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 79px;
+}
+
+.footer-left a {
+    color: #7a7a7a;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0.4px;
+}
+
+.footer-right a {
+    margin-left: 8px;
+}

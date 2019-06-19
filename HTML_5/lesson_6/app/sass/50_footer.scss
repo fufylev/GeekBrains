@@ -1,0 +1,163 @@
+footer {
+  margin-top: 5rem;
+}
+.news {
+  //width: 120.063rem;
+  background-color: #84bb26;
+  &__tweets {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8.125rem;
+    box-shadow: inset 0 -0.062rem 0 rgba(255, 255, 255, 0.25);
+
+  }
+  &__content {
+    width: 870px;
+    padding-left: 2rem;
+    &-text {
+      text-shadow: 0 0.063rem 0 rgba(255, 255, 255, 0.2);
+      color: #444645;
+      //font-family: "Arial MT";
+      font-size: 0.938rem;
+      font-weight: 400;
+      /* Text style for "L, orem ip" */
+      line-height: 1.125rem;
+      margin-bottom: 0.5rem;
+    }
+    &-date {
+      color: #cdfa7e;
+      //font-family: "Arial - Italic MT";
+      font-size: 0.875rem;
+      font-weight: 400;
+      /* Text style for "7 da" */
+      line-height: 0.75rem;
+      font-style: italic;
+    }
+  }
+  &__arrows {
+    &-icon {
+      font-size: 0.938rem;
+      font-weight: 400;
+      color: #444645;
+      padding: 1rem;
+    }
+  }
+}
+
+.footer {
+  min-height: 35.188rem;
+  background-color: #444645;
+  &-top {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-block {
+    width: 240px;
+    min-height: 260px;
+    //outline: 1px solid #ccc;
+    &__text {
+      display: block;
+    }
+    &__facebook {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__heading {
+      color: #e3e3e3;
+      font-family: Oswald;
+      font-size: 1.188rem;
+      font-weight: 400;
+      line-height: 1.251rem;
+      text-transform: uppercase;
+      &-like {
+        box-shadow: 0 0.063rem 0.063rem rgba(0, 0, 0, 0.1), inset 0 0.063rem 0.063rem rgba(255, 255, 255, 0.5);
+        border: 0.063rem solid #7bae23;
+        background-color: #7bae23;
+        padding: 3px 12px;
+        color: #ffffff;
+        //font-family: "Arial MT";
+        font-size: 0.938rem;
+        font-weight: 400;
+        line-height: 1.125rem;
+      }
+    }
+    &__list {
+      padding-left: 1rem;
+      margin-top: 2rem;
+    }
+    &__list li {
+      list-style-type: square;
+      color: #7bae23;
+    }
+    &__link {
+      color: #cccccc;
+      font-family: Gudea;
+      font-size: 0.938rem;
+      font-weight: 400;
+      line-height: 2.188rem;
+      list-style-type: square;
+    }
+    &__text {
+      color: #cccccc;
+      font-family: Gudea;
+      font-size: 0.938rem;
+      font-weight: 400;
+      line-height: 1.938rem;
+      &-first {
+        font-family: 'Gudea bold';
+        margin-top: 2rem;
+        font-weight: 700;
+        line-height: 1.938rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+  &__line {
+    margin-top: 5.8rem;
+    height: 0.063rem;
+    box-shadow: 0 0.063rem 0 rgba(255, 255, 255, 0.08);
+    background-color: #383938;
+  }
+  &__bottom {
+    //height: 5rem;
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left {
+    display: flex;
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-right: 0.8rem;
+    background-color: #84bb26;
+    color: #fafafa;
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 1.624rem;
+    transition: all 0.8s ease-out;
+    box-shadow: 0 0.063rem 0.063rem rgba(0, 0, 0, 0.15), inset 0 0.063rem 0.063rem rgba(255, 255, 255, 0.4);
+    border: 0.063rem solid #626664;
+    &:hover {
+      background-color: #fafafa;
+      color: #84bb26;
+      border: 0.063rem solid #84bb26;
+    }
+  }
+  &__copyright {
+    color: #b3b3b3;
+    //font-family: "Arial MT";
+    font-size: 0.813rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+  }
+
+}
