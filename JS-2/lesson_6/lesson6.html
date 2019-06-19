@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+
+    <button v-for="tab of tabs" @click="currentTab = tab" :key="tab">
+        {{ tab }}
+    </button>
+
+    <component :is="currentComp"></component>
+    <!--<some-el title="Some string" :counter="counter" @increase="counter++">-->
+        <!--<button @click="some">Slot btn</button>-->
+    <!--</some-el>-->
+    <!--<some-el title="New string" :counter="counter" @increase="counter++"></some-el>-->
+    <!--<some-el :title="text" :counter="counter" @increase="counter++"></some-el>-->
+    <!--<some-el :counter="counter" @increase="counter++"></some-el>-->
+    <!--<some-el :counter="counter" @increase="counter++"></some-el>-->
+    <!--<error></error>-->
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="components.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
