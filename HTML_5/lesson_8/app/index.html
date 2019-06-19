@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Venedor</title>
+    <link rel="shortcut icon" href="img/icons/logo.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--    <link rel="stylesheet" href="css/owl.carousel.min.css">-->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+<!--    <link rel="stylesheet" href="css/owl.theme.default.min.css">-->
+<!--    <script src="js/jquery/jquery-3.3.1.min.js"></script>-->
+<!--    <script src="js/jquery-ui/jquery-ui.min.js"></script>-->
+    <script src="js/font-awesome/all.min.js"></script>
+<!--    <script type="text/javascript" src="js/slick/slick.min.js"></script>-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <!--Block for the top green rectangle-->
+    <div class="rectangle"></div>
+    <!--End of green rectangle-->
+
+    <!--Block for TOP BAR-->
+    <div class="top-bar__bg">
+
+        <div class="top-bar container">
+            <!--Block for LEFT TOP BAR-->
+            <nav class="top-bar__nav">
+                <div class="top-bar__item">
+                    <a href="#" class="top-bar__link">
+                        <span class="top-bar__text"><i class="fas fa-edit"></i> My&nbsp;Wishlist (0)</span>
+                    </a>
+                </div>
+                <div class="top-bar__item">
+                    <a href="#" class="top-bar__link">
+                        <span class="top-bar__text"><i class="fas fa-user"></i> My&nbsp;Account</span>
+                    </a>
+                </div>
+                <div class="top-bar__item">
+                    <a href="#" class="top-bar__link">
+                        <span class="top-bar__text"><i class="fas fa-shopping-cart"></i> Shopping Cart</span>
+                    </a>
+                </div>
+                <div class="top-bar__item last">
+                    <a href="#" class="top-bar__link">
+                        <span class="top-bar__text"><i class="fas fa-check"></i> Checkout</span>
+                    </a>
+                </div>
+            </nav>
+            <!--End of LEFT TOP BAR-->
+
+            <!--Block for TOP BAR for visitor-->
+            <!-- For big screens -->
+            <div class="top-bar__login top-bar__login_lg">
+                <span class="top-bar__login">Welcome visitor you can</span>
+                <a href="#" class="top-bar__login_green">login</a>
+                <span class="top-bar__login">or</span>
+                <a href="#" class="top-bar__login_green">create an&nbsp;account.</a>
+            </div>
+
+            <!-- For small screens -->
+            <div class="top-bar__login top-bar__login_sm">
+                <a href="#" class="top-bar__login_green">Login</a>
+                <span class="top-bar__login">or</span>
+                <a href="#" class="top-bar__login_green">create an&nbsp;account.</a>
+            </div>
+            <!--End of CENTER BAR for visitor-->
+
+            <!--Block for TOP BAR selection  -->
+            <div class="top-bar__selection">
+                <ul class="currency-select">
+                    <li class="active" data-lang="Dollar"><i class="fas fa-dollar-sign"></i> US&nbsp;Dollar</li>
+                    <li data-lang="Euro"><i class="fas fa-euro-sign"></i> Euro</li>
+                    <li data-lang="Pound St."><i class="fas fa-pound-sign"></i> Pound St.</li>
+                </ul>
+                <ul class="language-select">
+                    <li class="active" data-lang="English"><img class="language-select__img"
+                                                                src="img/icons/english_flag.png"
+                                                                alt="flag">English
+                    </li>
+                    <li data-lang="Italian"><img class="language-select__img" src="img/icons/italian_flag.png"
+                                                 alt="flag">Italian
+                    </li>
+                    <li data-lang="Spanish"><img class="language-select__img" src="img/icons/spanish_flag.png"
+                                                 alt="flag">Spanish
+                    </li>
+                    <li data-lang="French"><img class="language-select__img" src="img/icons/french_flag.png" alt="flag">French
+                    </li>
+                    <li data-lang="German"><img class="language-select__img" src="img/icons/german_flag.png" alt="flag">German
+                    </li>
+                </ul>
+
+            </div>
+            <!--End of RIGHT TOP BAR-->
+        </div>
+        <!--End for TOP BAR-->
+
+        <div class="top-bar top-bar_mobile container">
+            <!--Block for LEFT TOP BAR-->
+            <nav class="top-bar__nav">
+                <div class="top-bar__item">
+                    <a href="#" class="top-bar__link">
+                        <span class="top-bar__text"><i class="far fa-edit"></i><!--&nbsp;--></span>
+                    </a>
+                </div>
+                <div class="top-bar__item">
+                    <a href="#" class="top-bar__link">
+                        <span class="top-bar__text"><i class="fas fa-user"></i></span>
+                    </a>
+                </div>
+                <div class="top-bar__item">
+                    <a href="#" class="top-bar__link">
+                        <span class="top-bar__text"><i class="fas fa-shopping-cart"></i></span>
+                    </a>
+                </div>
+                <div class="top-bar__item last">
+                    <a href="#" class="top-bar__link">
+                        <span class="top-bar__text"><i class="fas fa-check"></i></span>
+                    </a>
+                </div>
+            </nav>
+            <!--End of LEFT TOP BAR-->
+
+            <!--Block for TOP BAR selection  -->
+            <div class="top-bar__selection">
+                <ul class="currency-select">
+                    <li class="active" data-lang="Dollar">USD</li>
+                    <li data-lang="Euro">EUR</li>
+                    <li data-lang="Pound St.">GBP</li>
+                </ul>
+                <ul class="language-select">
+                    <li class="active" data-lang="English"><img class="language-select__img"
+                                                                src="img/icons/english_flag.png"
+                                                                alt="flag">En
+                    </li>
+                    <li data-lang="Italian"><img class="language-select__img" src="img/icons/italian_flag.png"
+                                                 alt="flag">It
+                    </li>
+                    <li data-lang="Spanish"><img class="language-select__img" src="img/icons/spanish_flag.png"
+                                                 alt="flag">Sp
+                    </li>
+                    <li data-lang="French"><img class="language-select__img" src="img/icons/french_flag.png" alt="flag">Fr
+                    </li>
+                    <li data-lang="German"><img class="language-select__img" src="img/icons/german_flag.png" alt="flag">Gr
+                    </li>
+                </ul>
+
+            </div>
+            <!--End of RIGHT TOP BAR-->
+        </div>
+        <!--End for TOP BAR-->
+
+        <div class="top-bar__login top-bar__login_bottom container">
+            <a href="#" class="top-bar__login_green">Login</a>
+            <span class="top-bar__login">or</span>
+            <a href="#" class="top-bar__login_green">create an&nbsp;account.</a>
+        </div>
+
+    </div>
+
+    <!--Block HEADER-->
+    <header class="header container">
+
+        <!--Block for LOGO and CONTACTS-->
+        <a class="logo" href="index.html">
+            <img src="img/icons/logo.svg" alt="logo" class="logo__img">
+            <span class="logo__text">Venedor <span class="logo__text_green">.</span></span>
+        </a>
+        <div class="support">
+            <div class="support__content">
+                <img src="img/icons/headphones_green.svg" alt="headphones" class="support__headphone">
+                <div class="support__numbers">
+                    <span>+(404) 158 14 25 78</span><br/>
+                    <span>+(404) 851 21 48 15</span>
+                </div>
+            </div>
+            <div class="support__content support__content_network">
+                <div class="support__skype">
+                    <img src="img/icons/skype_green.svg" alt="" class="support__skype-img">
+                    <span class="support__skype-text">venedor_support</span>
+                </div>
+                <div class="support__email">
+                    <img src="img/icons/mail_icon_green.svg" alt="" class="support__email-img">
+                    <span class="support__email-text">venedor@gmail.com</span>
+                </div>
+            </div>
+        </div>
+        <!--END of LOGO and CONTACTS Block-->
+
+    </header><!--End of HEADER-->
+    <div class="search search_mobile">
+        <form action="#" method="post" class="search__form">
+            <input type="text" class="search__field">
+            <button class="search__ntn" type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+    </div>
+
+    <!--Block-container for SEARCH & CART-->
+    <div class="nav-wrapper container">
+
+        <!--Top navigation links block-->
+        <nav class="top-nav">
+            <ul class="top-nav__content">
+                <li class="top-nav__items"><a href="#" class="top-nav__link top-nav__link_active">FASHION</a>
+                    <div class="drop-menu">
+                        <div class="drop-menu__flex">
+                            <h3 class="drop-menu__name">Clothing</h3>
+                            <ul class="drop-menu__list">
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Dresses</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Jeans &amp;&nbsp;Trousers</a>
+                                </li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Blouses &amp;&nbsp;Shirts</a>
+                                </li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Tops
+                                    &amp;&nbsp;T-Shirts</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Jackets
+                                    &amp;&nbsp;Coats</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Skirts</a></li>
+                            </ul>
+                        </div>
+                        <div class="drop-menu__flex">
+                            <h3 class="drop-menu__name">Shoes</h3>
+                            <ul class="drop-menu__list">
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Formal Shoes</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Casual Shoes</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Sandals</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Boots</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Wide Fit</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Slippers</a></li>
+                            </ul>
+                        </div>
+                        <div class="drop-menu__flex">
+                            <h3 class="drop-menu__name">ACCESSORIES</h3>
+                            <ul class="drop-menu__list">
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Bags
+                                    &amp;&nbsp;Purses</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Belts</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Gloves</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Jewellery</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Sunglasses</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Hair Accessories</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="drop-menu__flex">
+                            <h3 class="drop-menu__name">Sports</h3>
+                            <ul class="drop-menu__list">
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Sport Tops &amp;&nbsp;Vests</a>
+                                </li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Hoodies</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Swimwear</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Footwear</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Sports Underwear</a>
+                                </li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Bags</a></li>
+                            </ul>
+                        </div>
+                        <div class="drop-menu__flex">
+                            <h3 class="drop-menu__name">Maternity</h3>
+                            <ul class="drop-menu__list">
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Tops
+                                    &amp;&nbsp;Skirts</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Jeans</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Dresses</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Trousers &amp;&nbsp;Shorts</a>
+                                </li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Knitwear</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Jackets
+                                    &amp;&nbsp;Coats</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-nav__items"><a href="#" class="top-nav__link">ELECTRONICS</a>
+                    <div class="drop-menu drop-menu__electronics">
+                        <div class="drop-menu__flex">
+                            <h3 class="drop-menu__name">TV + Video</h3>
+                            <ul class="drop-menu__list">
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">LED TVs</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">LCD&nbsp;TVs</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Plasma TVs</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Smart TVs</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">3D&nbsp;TVs</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Combo TVs</a></li>
+                            </ul>
+                        </div>
+                        <div class="drop-menu__flex">
+                            <h3 class="drop-menu__name">Photo</h3>
+                            <ul class="drop-menu__list">
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Point-and-Shoots</a>
+                                </li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Compact</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Digital SLRs</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Kids Cameras</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Lenses</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Video</a></li>
+                            </ul>
+                        </div>
+                        <div class="drop-menu__flex">
+                            <h3 class="drop-menu__name">Computing</h3>
+                            <ul class="drop-menu__list">
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Monitors</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Notebooks</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Tablet PC</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Desktop</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Mouses</a></li>
+                                <!--<li class="drop-menu__item"><a href="#" class="drop-menu__link"></a></li>-->
+                            </ul>
+                        </div>
+                        <div class="drop-menu__flex">
+                            <h3 class="drop-menu__name">Mobile</h3>
+                            <ul class="drop-menu__list">
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Mobile Phones</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Smartphones</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Communicators</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Accessories</a></li>
+                                <li class="drop-menu__item"><a href="#" class="drop-menu__link">Watches</a></li>
+                                <!--<li class="drop-menu__item"><a href="#" class="drop-menu__link"></a></li>-->
+                            </ul>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="top-nav__items"><a href="#" class="top-nav__link">GIFTS</a></li>
+                <li class="top-nav__items"><a href="#" class="top-nav__link">BOOKS</a></li>
+                <li class="top-nav__items"><a href="#" class="top-nav__link">AT&nbsp;HOME</a></li>
+                <li class="top-nav__items last"><a href="#" class="top-nav__link">MUSIC</a></li>
+            </ul>
+        </nav> <!--END of Top navigation links block-->
+
+
+        <!--Mini MENU-->
+        <div class="min-menu">MENU<img src="img/header/bars.svg" alt="bars" class="min-menu__bars">
+        </div>
+        <!--End of Mini MENU-->
+
+        <!--Block-container for SEARCH & CART-->
+        <div class="search-cart-wrapper search-cart-wrapper_lg">
+
+            <!-- Search bar-->
+            <div class="search">
+                <form action="#" method="post" class="search-form">
+                    <input type="text" class="search-field">
+                    <button class="search__btn" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+
+            <!--Cart module-->
+            <div class="cart">
+                <!--<img src="img/icons/cart-icon_white.png" alt="cart" class="cart__pic">-->
+                <span  class="cart__text" onselectstart="return false" onmousedown="return false">
+                    <i class="fas fa-shopping-cart"></i>&ensp;
+                    <span class="cart__text_content" onselectstart="return false" onmousedown="return false"></span></span>
+                <div class="cart-block invisible">
+                    <div class="cart-block_container">
+
+                    </div>
+                    <div class="cart-block-sum_container"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="top-slider">
+        <div class="main-top-slider__buttons">
+            <div class="top-slider__next"><i class="fas fa-angle-right"></i></div>
+            <div class="top-slider__prev"><i class="fas fa-angle-left"></i></div>
+        </div>
+        <div id="owl-carousel" class="owl-carousel">
+            <div class="item item__content">
+                <div class="top-slider__first">
+                    <img src="img/slider/slider_1_boy.png" alt="boy" class="top-slider__first-boy">
+                    <img src="img/slider/slider_1_phone.png" alt="phone" class="top-slider__first-phone">
+                </div>
+            </div>
+            <div class="item item__content">
+                <div class="top-slider__second">
+                    <img src="img/slider/woman.png" alt="boy" class="top-slider__second-women">
+                </div>
+            </div>
+            <div class="item item__content">
+                <div class="top-slider__third">
+                    <img src="img/slider/monitor.png" alt="monitor" class="top-slider__third-monitor">
+                    <img src="img/slider/mouse.png" alt="mouse" class="top-slider__third-mouse">
+                    <img src="img/slider/keyboard.png" alt="keyboard" class="top-slider__third-keyboard">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <main class="main container">
+        <div class="main-content">
+
+            <h4 class="main-content__heading">Our Products</h4>
+            <p class="main-content__text">Save your money and time with our store.
+                Here&rsquo;s the best part of&nbsp;our impressive assortment.</p>
+            <div class="main-content__bar">
+                <div class="main-content__bar-item"><a href="#" class="main-content__bar-link_green">ALL</a></div>
+                <div class="main-content__bar-item"><a href="#" class="main-content__bar-link">LATEST</a></div>
+                <div class="main-content__bar-item"><a href="#" class="main-content__bar-link">FEATURED</a></div>
+                <div class="main-content__bar-item"><a href="#" class="main-content__bar-link">BESTSELLERS</a></div>
+                <div class="main-content__bar-item"><a href="#" class="main-content__bar-link">SPESIAL</a></div>
+            </div>
+            <div class="products"></div>
+            <h4 class="main-content__heading">Welcome to&nbsp;Venedor</h4>
+            <div class="main-content__block">
+                <p class="main-content__block-text"> Venedor is&nbsp;a&nbsp;fully responsive PSD theme designed
+                    for all types of&nbsp;platforms: WooCommerce, Magento,
+                    OpenCart, PrestaShop and other. Based on
+                    Bootstrap&rsquo;s 12&nbsp;column 1200px responsive grid
+                    Template. Great looks on&nbsp;desktops, tablets and
+                    mobiles.<br>
+                    Sed interdum magna sit amet orci tristique blandit.
+                    Etiam id&nbsp;justo consequat quam viverra elementum.
+                    Sed ac&nbsp;magna sed massa rhoncus elementum et&nbsp;ac
+                    augue. Morbi non tellus nisi. Pellentesque habitant
+                    morbi tristique senectus. <br><a href="#" class="main-content__block-link">Buy Venedor Theme!</a>
+                </p>
+                <img src="img/catalog/monitors.png" alt="" class="main-content__block-img">
+            </div>
+            <div class="products_second"></div>
+        </div>
+
+        <aside class="sidebar">
+            <div id="newsletter_block_left" class="block">
+                <h4 class="block__heading">BE THE FIRST TO KNOW</h4>
+                <p class="block__text">Get all the latest information on Events, Sales and Offers.
+                    Sign up for the Venedor store newsletter today.</p>
+                <form action="" method="post" class="block__form">
+                    <input class="block__form-email"
+                           id="newsletter-input" type="text" name="email" size="18"
+                           value="" placeholder="Enter your e-mail">
+                    <input type="submit" name="submitNewsletter" class="block__form-submit" value="Submit">
+                </form>
+            </div>
+            <div class="testimonials">
+                <div class="testimonials__slider">
+                    <div class="testimonials__text">TESTIMONIALS</div>
+                    <div class="testimonials__buttons">
+                        <div class="testimonials__prev"><i class="fas fa-angle-left"></i></div>
+                        <div class="testimonials__next"><i class="fas fa-angle-right"></i></div>
+                    </div>
+                </div>
+                <div class="single-item">
+                    <div class="testimonials__block">
+                        <div class="testimonials__block-content">
+                            <div class="testimonials__block-heading">
+                                <span class="testimonials__block-quote"><i class="fas fa-quote-left"></i></span>
+                                &nbsp;Best Service!
+                            </div>
+                            <p class="testimonials__block-text">Maecenas semper aliquam
+                                massa. Praesent pharetra sem
+                                vitae nisi eleifend molestie.
+                                Aliquam molestie scelerisque
+                                ultricies. Suspendisse potenti. </p>
+                            <div class="testimonials__block-content_arrow"></div>
+                        </div>
+                        <div class="testimonials__block-user">
+                            <img src="" alt="" class="testimonials__block-img">
+                            <div class="testimonials__block-user_data">
+                                <p class="testimonials__block-user_name">Anna Retallick</p>
+                                <p class="testimonials__block-user_date">11.03.2019</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials__block">
+                        <div class="testimonials__block-content">
+                            <div class="testimonials__block-heading">
+                                <span class="testimonials__block-quote"><i class="fas fa-quote-left"></i></span>
+                                &nbsp;My Wishes
+                            </div>
+                            <p class="testimonials__block-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Nulla interdum tincidunt felis, id mattis nisi mattis in. Etiam vehicula sem et
+                                augue... </p>
+                            <div class="testimonials__block-content_arrow"></div>
+                        </div>
+                        <div class="testimonials__block-user">
+                            <img src="" alt="" class="testimonials__block-img">
+                            <div class="testimonials__block-user_data">
+                                <p class="testimonials__block-user_name">Marek</p>
+                                <p class="testimonials__block-user_date">12.05.2019</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-item-1">
+                <div class="shipping">
+                    <div class="shipping__slider">
+                        <div class="shipping__heading">Free</div>
+                        <div class="shipping__text">Shipping</div>
+                        <div class="shipping__price">on orders over
+                            <span class="shipping__price-green">$150</span>
+                        </div>
+                        <img src="img/icons/Truck.png" alt="" class="shipping__truck">
+                        <div class="shipping__content">The offers is valid on all our
+                            store item!
+                        </div>
+                    </div>
+                </div>
+                <div class="shipping">
+                    <div class="shipping__slider">
+                        <div class="shipping__heading">Free</div>
+                        <div class="shipping__text">Shipping</div>
+                        <div class="shipping__price">on orders over
+                            <span class="shipping__price-green">$150</span>
+                        </div>
+                        <img src="img/icons/Truck.png" alt="" class="shipping__truck">
+                        <div class="shipping__content">The offers is valid on all our
+                            store item!
+                        </div>
+                    </div>
+                </div>
+                <div class="shipping">
+                    <div class="shipping__slider">
+                        <div class="shipping__heading">Free</div>
+                        <div class="shipping__text">Shipping</div>
+                        <div class="shipping__price">on orders over
+                            <span class="shipping__price-green">$150</span>
+                        </div>
+                        <img src="img/icons/Truck.png" alt="" class="shipping__truck">
+                        <div class="shipping__content">The offers is valid on all our
+                            store item!
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <div class="news">
+            <div class="news__tweets container">
+                <div class="news__tweets-icon"><img src="img/icons/tw_icon_2.png" alt=""></div>
+                <div class="news__content">
+                    <div class="news__content-text">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit euismod tristique eget pretium erat http://pretium/ferm
+                    </div>
+                    <div class="news__content-date">
+                        <span>7&nbsp;days ago</span>
+                        <div class="news__arrows news__arrows-mobile">
+                            <a href="" class="news__arrows-icon"><i class="fas fa-chevron-left"></i></a>
+                            <a href="" class="news__arrows-icon"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news__arrows news__arrows-screen">
+                    <a href="" class="news__arrows-icon"><i class="fas fa-chevron-left"></i></a>
+                    <a href="" class="news__arrows-icon"><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="">
+            <div class="footer-top container">
+                <div class="footer-block">
+                    <h4 class="footer-block__heading">MY&nbsp;ACCOUNT</h4>
+                    <ul class="footer-block__list">
+                        <li><a class="footer-block__link" href="#">My&nbsp;account</a></li>
+                        <li><a class="footer-block__link" href="#">Personal information</a></li>
+                        <li><a class="footer-block__link" href="#">Addresses</a></li>
+                        <li><a class="footer-block__link" href="#">Discount</a></li>
+                        <li><a class="footer-block__link" href="#">Orders history</a></li>
+                        <li><a class="footer-block__link" href="#">Your Vouchers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-block">
+                    <h4 class="footer-block__heading">INFORMATION</h4>
+                    <ul class="footer-block__list">
+                        <li><a href="" class="footer-block__link">New products</a></li>
+                        <li><a href="" class="footer-block__link">Top sellers</a></li>
+                        <li><a href="" class="footer-block__link">Specials</a></li>
+                        <li><a href="" class="footer-block__link">Manufacturers</a></li>
+                        <li><a href="" class="footer-block__link">Suppliers</a></li>
+                        <li><a href="" class="footer-block__link">Our stores</a></li>
+                    </ul>
+                </div>
+                <div class="footer-block">
+                    <h4 class="footer-block__heading">CONTACT INFORMATION</h4>
+                    <div class="footer-block__text footer-block__text-first">VENEDOR LTD</div>
+                    <div class="footer-block__text">United Kingdom</div>
+                    <div class="footer-block__text">Greater London</div>
+                    <div class="footer-block__text">London 02587</div>
+                    <div class="footer-block__text">Oxford Street 48/188</div>
+                    <div class="footer-block__text">Working days: Mon. &mdash;&nbsp;Sun.</div>
+                    <div class="footer-block__text">Working hours: 9.00AM&nbsp;&mdash; 8.00PM</div>
+                </div>
+                <div class="footer-block footer-block__last">
+                    <div class="footer-block__facebook">
+                        <h4 class="footer-block__heading">FACEBOOK</h4>
+                        <a href="" class="footer-block__heading-like"><i class="far fa-thumbs-up"></i> LIKE!</a>
+                    </div>
+                    <div class="footer-block__like">1452 people like
+                        <a href="" class="footer-block__like footer-block__like-green">PromoKit</a>
+                    </div>
+                    <div class="facebook__block">
+                        <div class="facebook">
+                            <img src="https://placehold.it/50x50" alt="face" class="facebook__img">
+                            <a href="" class="facebook__link">Anna</a>
+                        </div>
+                        <div class="facebook">
+                            <img src="https://placehold.it/50x50" alt="face" class="facebook__img">
+                            <a href="" class="facebook__link">Tom</a>
+                        </div>
+                        <div class="facebook">
+                            <img src="https://placehold.it/50x50" alt="face" class="facebook__img">
+                            <a href="" class="facebook__link">Antuan</a>
+                        </div>
+                        <div class="facebook">
+                            <img src="https://placehold.it/50x50" alt="face" class="facebook__img">
+                            <a href="" class="facebook__link">Milla</a>
+                        </div>
+                        <div class="facebook">
+                            <img src="https://placehold.it/50x50" alt="face" class="facebook__img">
+                            <a href="" class="facebook__link">Justine</a>
+                        </div>
+                        <div class="facebook">
+                            <img src="https://placehold.it/50x50" alt="face" class="facebook__img">
+                            <a href="" class="facebook__link">Maria</a>
+                        </div>
+                        <div class="facebook facebook__hidden">
+                            <img src="https://placehold.it/50x50" alt="face" class="facebook__img">
+                            <a href="" class="facebook__link">Antuan</a>
+                        </div>
+                        <div class="facebook facebook__hidden">
+                            <img src="https://placehold.it/50x50" alt="face" class="facebook__img">
+                            <a href="" class="facebook__link">Justine</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer__line"></div>
+            <div class="footer__bottom container">
+                <div class="footer__left">
+                    <a href="#" class="footer__icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer__icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="footer__icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="footer__icon"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" class="footer__icon"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="footer__icon"><i class="fab fa-skype"></i></a>
+                    <a href="#" class="footer__icon"><i class="far fa-envelope"></i></a>
+                </div>
+                <div class="footer__copyright"><span>&copy;&nbsp;2012 Powered by&nbsp;WooCommerce&trade;. All Rights
+                    Reserved.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<script src="js/jquery/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-ui/jquery-ui.min.js"></script>
+<script src="js/font-awesome/all.min.js"></script>
+<script type="text/javascript" src="js/slick/slick.min.js"></script>
+<!--<script src="js/owlcarousel/owl.carousel.min.js"></script>-->
+<script src="js/animation/nav-bar.js"></script>
+<script src="js/animation/owl.js"></script>
+<!--<script src="js/products/cart-catalog.js"></script>-->
+<script src="js/products/main.js"></script>
+
+
+
+</body>
+
+</html>

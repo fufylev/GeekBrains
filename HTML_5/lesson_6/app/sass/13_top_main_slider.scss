@@ -1,0 +1,121 @@
+$color-light_green: #a8bf00;
+$color-medium_green: #84bb26;
+$color-dark_green: #7bae23;
+$color-dark_red: #c72929;
+$color-dark_grey: #444645;
+$sliderContainerHeight: 37.5rem;
+$sliderContainerWeight: 120rem;
+
+//Top slider below the menu
+
+.owl-carousel .item__content {
+  width: $sliderContainerWeight;
+  height: $sliderContainerHeight;
+}
+
+
+
+.top-slider {
+  max-width: $sliderContainerWeight;
+  height: $sliderContainerHeight;
+  position: relative;
+  margin: 0 auto;
+  z-index: 1;
+  &__first {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    //background: url('img/slider/slider_1_phone.png') no-repeat 55.1rem 2.5rem, url('img/slider/slider_1_boy.png') no-repeat 23rem 2rem;
+    background-color: #ccc;
+    &-boy {
+      position: absolute;
+      width: 40%!important;
+      top: 7%;
+      left: 17%;
+      -webkit-animation: slide-in-left 1s ease;
+      animation: slide-in-left 1s ease;
+
+    }
+    &-phone {
+      position: absolute;
+      width: 14%!important;
+      top: 7%;
+      left: 42%;
+      -webkit-animation: slide-in-right 1s ease;
+      animation: slide-in-right 1s ease;
+    }
+  }
+  &__buttons {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+  }
+  &__next, &__prev {
+    width: 0.0364 * $sliderContainerWeight;
+    height: 0.075 * $sliderContainerHeight;
+    background-color: #fafafa;
+    position: absolute;
+    z-index: 3;
+    top: 44%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #9f9f9f;
+    &:hover {
+      background-color: $color-dark_green;
+      color: #ffffff;
+      box-shadow: 0 0.063rem 0.063rem rgba(0, 0, 0, 0.05), inset 0 0.063rem 0.063rem #ffffff;
+    }
+  }
+  &__next {
+    right: 0;
+  }
+  &__prev {
+    left: 0;
+  }
+}
+.owl-item .active {
+    -webkit-animation: slide-in-left 1s ease;
+    animation: slide-in-left 1s ease;
+}
+//.owl-item .active .top-slider__first-phone {
+//  -webkit-animation: slide-in-left 1s ease;
+//  animation: slide-in-left 1s ease;
+//}
+
+@media only screen  and (min-width : 1170px) {
+  .top-slider__prev, .top-slider__next {
+    width: 0.0364 * $sliderContainerWeight;
+    height: 0.075 * $sliderContainerHeight;
+  }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1170px) {
+
+}
+
+@media screen and (min-width: 724px) and (max-width: 960px) {
+  .top-slider__prev, .top-slider__next {
+    width: 0.033 * $sliderContainerWeight;
+    height: 0.075 * $sliderContainerHeight;
+    top: 42%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 724px){
+  .main-top-slider__arrow-left, .main-top-slider__arrow-right {
+    width: 0.023 * $sliderContainerWeight;
+    height: 0.055 * $sliderContainerHeight;
+    font-size: 1.5rem;
+    top: 40%;
+  }
+  .top-slider {
+    display: none;
+  }
+}
+

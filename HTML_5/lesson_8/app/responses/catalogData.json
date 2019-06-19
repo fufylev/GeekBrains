@@ -1,0 +1,38 @@
+[
+  {
+    "id_product": 1,
+    "url": "img/catalog/canon-ef-24-70mm.jpg",
+    "product_name": "Canon Ef 24 70mm",
+    "price": 582
+  },
+  {
+    "id_product": 2,
+    "url": "img/catalog/canon-eos-6d.jpg",
+    "product_name": "Canon Eos 6d",
+    "price": 589
+  },
+  {
+    "id_product": 3,
+    "url": "img/catalog/blackberry-z10.jpg",
+    "product_name": "Blackberry Z10",
+    "price": 484
+  },
+  {
+    "id_product": 4,
+    "url": "img/catalog/galaxy-s4.jpg",
+    "product_name": "Galaxy S4",
+    "price": 498
+  },
+  {
+    "id_product": 5,
+    "url": "img/catalog/google-nexus-7.jpg",
+    "product_name": "Google Nexus 7",
+    "price": 404
+  },
+  {
+    "id_product": 6,
+    "url": "img/catalog/lg-optimus-g-pro.jpg",
+    "product_name": "Lg Optimus G Pro",
+    "price": 426
+  }
+]

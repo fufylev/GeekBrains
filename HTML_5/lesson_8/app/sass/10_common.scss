@@ -1,0 +1,17 @@
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.container { /* class for all section 1170px width*/
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0;
+} /* END of class for all section 1170px width*/
+
+
+//color box
+$color-light_green: #a8bf00;
+$color-medium_green: #84bb26;
+$color-dark_green: #7bae23;
+$color-dark_red: #c72929;
+$color-dark_grey: #444645;

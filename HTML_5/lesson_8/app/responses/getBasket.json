@@ -1,0 +1,24 @@
+{
+  "total_price": 235,
+  "countGoods": 4,
+  "basket": [
+    {
+      "id_product": 2,
+      "product_name": "RUFFLE OFF SHOULDER",
+      "price": 55,
+      "product_amount": 1,
+      "totalSum": 55,
+      "img_url": "img/prod-2.png",
+      "page_url": "product_details.html"
+    },
+    {
+      "id_product": 3,
+      "product_name": "MANGO PEOPLE T-SHIRT",
+      "price": 60,
+      "product_amount": 3,
+      "totalSum": 180,
+      "img_url": "img/prod-3.png",
+      "page_url": "product_details.html"
+    }
+  ]
+}
