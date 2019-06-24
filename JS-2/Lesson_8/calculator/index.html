@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="shortcut icon" href="https://cdn-images-1.medium.com/max/1050/1*zyNSb0UXhP8TfxYbj-GNWg.png"
+          type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+<div id="app">
+    <h3>Примитивный расчет</h3>
+    <label for="operand1" class="label">n1</label>
+    <input id="operand1" type="text" v-model="operand1">
+    <br>
+    <label for="actions" class="label">math</label>
+    <input class="action" id="actions" type="text" v-model="actions">
+    <button @click="actions = '+'">+</button>
+    <button @click="actions = '-'">-</button>
+    <button @click="actions = '*'">*</button>
+    <button @click="actions = '/'">/</button>
+    <button @click="actions = '^'">^</button>
+    <br>
+    <label for="operand2" class="label">n2</label>
+    <input id="operand2" type="text" v-model="operand2">
+    <br>
+    <div class="error" v-show="isIncorrectOperand">Input shell be only a NUMBER</div>
+    <div class="error" v-show="isIncorrectMathOperation">Incorrect Math operation</div>
+    <div class="text">{{ operand1 }} {{actions}} {{operand2}} = {{ result}}</div>
+</div>
+<br><hr>
+<div id="app2">
+    <h3>Графический калькулятор</h3>
+    <div class="calc">
+        <div class="up-line">
+            <!--<input class="input-text" type="text" v-model="input">-->
+            <div class="output"><span>{{ input }}</span></div><br>
+            <div class="output"><span v-show="output">{{ output }}</span></div>
+        </div>
+        <div class="board">
+            <div class="btn orange" @click="clear()"><span>C</span></div>
+            <div class="btn"></div>
+            <div class="btn" @click="addSymbol('^')"><span>^</span></div>
+            <div class="btn" @click="addSymbol('/')"><span>	&#247;</span></div>
+            <div class="btn" @click="addNumber(7)"><span>7</span></div>
+            <div class="btn" @click="addNumber(8)"><span>8</span></div>
+            <div class="btn" @click="addNumber(9)"><span>9</span></div>
+            <div class="btn" @click="addSymbol('*')"><span>&#215;</span></div>
+            <div class="btn" @click="addNumber(4)"><span>4</span></div>
+            <div class="btn" @click="addNumber(5)"><span>5</span></div>
+            <div class="btn" @click="addNumber(6)"><span>6</span></div>
+            <div class="btn" @click="addSymbol('-')"><span>-</i></span></div>
+            <div class="btn" @click="addNumber(1)"><span>1</span></div>
+            <div class="btn" @click="addNumber(2)"><span>2</span></div>
+            <div class="btn" @click="addNumber(3)"><span>3</span></div>
+            <div class="btn" @click="addSymbol('+')"><span>+</span></div>
+            <div class="btn"><span></span></div>
+            <div class="btn" @click="addNumber(0)"><span>0</span></div>
+            <div class="btn" @click="addNumber('.')"><span>.</span></div>
+            <div class="btn orange"><span>=</span></div>
+        </div>
+    </div>
+</div>
+<script src="js/vue.js"></script>
+<script src="js/main.js"></script>
+<script src="js/calculator.js"></script>
+</body>
+</html>

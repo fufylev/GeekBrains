@@ -1,0 +1,123 @@
+html {
+    font-family: Arial;
+    font-size: 30px;
+}
+h3 {
+    font-size: 25px;
+}
+#app {
+    margin: 30px;
+    width: 100%;
+}
+
+.label {
+    display: inline-block;
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+#operand1, #operand2 {
+    width: 200px;
+    height: 50px;
+    font-size: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.action {
+    width: 30px;
+    padding: 0 5px;
+    text-align: center;
+}
+
+.result {
+    font-size: 40px;
+    color: red;
+    font-weight: 700;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+button:hover {
+    color: #000;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+.text {
+    font-weight: 700;
+    color: #00d021;
+    font-size: 45px;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 700;
+}
+#app2 {
+    font-size: 18px;
+    margin: 10px;
+}
+.calc {
+    width: 300px;
+}
+.up-line {
+   /* height: 50px;
+    margin-bottom: 30px;*/
+}
+.input-text {
+    width: 277px!important;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    margin-bottom: 10px;
+    height: 50px;
+    text-align: right;
+    padding-right: 20px!important;
+    border-radius: 10px;
+}
+.output {
+    width: 300px;
+    display: table-cell;
+    border: 1px solid #ccc;
+    height: 50px;
+    border-radius: 10px;
+    text-align: right!important;
+    vertical-align: middle;
+    padding-right: 20px!important;
+}
+.board {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 25px;
+}
+.btn:hover {
+    color: #fff;
+    background-color: #ccc;
+}
+.orange {
+    background-color: orange;
+}
