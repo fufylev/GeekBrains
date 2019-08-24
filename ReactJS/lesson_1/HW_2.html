@@ -20,7 +20,7 @@
     params = params[0]
                 .split(",")
                 .map(side => +side);
-    
+
     if ( params.filter(el => el <= 0)[0] <= 0 ) {
       document.write(`длина любой стороны фигуры должна быть больше нуля, повторите ввод`);
       return;
