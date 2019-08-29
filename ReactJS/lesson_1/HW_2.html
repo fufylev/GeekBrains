@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculateArea</title>
+</head>
+<body>
+<!--
+  Написать функцию calculateArea, которая будет принимать параметры, для вычисления площади (можете выбрать какую то
+  конкретную фигуру, а можете, основываясь на переданных параметрах, выполнять требуемый алгоритм вычисления площади
+  для переданной в параметрах фигуры) и возвращать объект вида: { area, figure, input }, где area - вычисленная площадь,
+  figure - название фигуры, для которой вычислялась площадь, input - входные параметры,
+  по которым было произведено вычисление.
+-->
+
+<script>
+  'use strict';
+
+  const calculateArea = (...params) => {
+    params = params[0]
+                .split(",")
+                .map(side => +side);
+
+    if ( params.filter(el => el <= 0)[0] <= 0 ) {
+      document.write(`длина любой стороны фигуры должна быть больше нуля, повторите ввод`);
+      return;
+    }
+    const object = {
+      area: null,
+      figure: '',
+      input: params,
+    };
+    const [ a, b, c ] = params; // длина сторон в отдельности
+    switch ( params.length ) {
+      case 0 || 1:
+        return document.write('Фигура должна содержать как минимум две стороны, введите заново');
+      case 2:
+        object.figure = ( a === b ) ? 'Квадрат' : 'Параллелограмм';
+        object.area = a * b;
+        break;
+      case 3:
+        object.figure = 'Треугольник';
+        const half = ( a + b + c ) / 2;
+        object.area = (Math.sqrt(half * ( half - a ) * ( half - b ) * ( half - c ))).toFixed(2); // Triangle square
+        break;
+      default:
+        return document.write('Необходимо было ввести не более трех сторон');
+    }
+    console.log(object);
+    return document.write(`Название фигуры - "${object.figure}", площадь фигуры - ${object.area}`);
+  };
+  calculateArea(prompt(`Введите через зяпятую длины сторон фигуры: 2 числа если 'Квадрат или Параллелограмм' и 3 числа если 'Треугольник'`));
+</script>
+
+</body>
+</html>
