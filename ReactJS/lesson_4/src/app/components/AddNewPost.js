@@ -10,7 +10,6 @@ export default class AddNewPost extends Component {
       body: '',
       display: false,
     };
-    this.display = false;
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
