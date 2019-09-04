@@ -22,11 +22,11 @@ export default class AddNewPost extends Component {
   
   handleSubmit(event) {
     event.preventDefault();
-    if (this.state.userName.length && this.state.title.length && this.state.body.length) {
-      delete this.state.display;
-      this.props.addPost(this.state);
+    if ( this.state.userName.length && this.state.title.length && this.state.body.length ) {
+      const { display, ...post } = this.state;
+      this.props.addPost(post);
     } else {
-      this.setState({display: true});
+      this.setState({ display: true });
     }
   }
   
@@ -35,27 +35,27 @@ export default class AddNewPost extends Component {
       <div className="post">
         <div className="post-body">
           <form onSubmit={ this.handleSubmit } className="text-center border border-light p-5 m-1">
-    
+            
             <p className="h4 mb-4">Add new post</p>
-    
+            
             <input type="text" name="userName" value={ this.state.userName } onChange={ this.handleChange }
                    className="form-control mb-4" placeholder="User name:"/>
-    
+            
             <textarea name="title" value={ this.state.title } onChange={ this.handleChange }
                       className="form-control mb-4" placeholder="Post title:"/>
-    
+            
             <textarea name="body" value={ this.state.body } onChange={ this.handleChange }
                       className="form-control mb-4" placeholder="Post content:"/>
-    
+            
             <div className="row text-center">
               <div className="col-3">
                 <button className="btn btn-info btn-block my-4" type="submit" value="Submit">Add post</button>
               </div>
               <div className="col-3">
-                <button onClick={this.props.closePostForm} className="btn btn-info btn-block my-4">Cancel</button>
+                <button onClick={ this.props.closePostForm } className="btn btn-info btn-block my-4">Cancel</button>
               </div>
             </div>
-            {this.state.display && <p className="h4 mt-4 text text-warning">All fields are required</p>}
+            { this.state.display && <p className="h4 mt-4 text text-warning">All fields are required</p> }
           </form>
         </div>
       </div>
