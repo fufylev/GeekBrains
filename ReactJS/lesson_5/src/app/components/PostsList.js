@@ -25,8 +25,8 @@ export default class PostsList extends Component {
   handleCurrentPage(currentPage) {
     this.setState({
       currentPage,
-      startOfPagination: ( currentPage - 1 ) * 10,
-      endOfPagination: currentPage * 10,
+      startOfPagination: ( currentPage - 1 ) * this.state.postsPerPage,
+      endOfPagination: currentPage * this.state.postsPerPage,
     })
   }
   
