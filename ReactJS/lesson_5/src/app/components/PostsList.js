@@ -4,6 +4,8 @@ import axios from 'axios';
 import Post from './Post';
 import Loader from './Loader';
 import Pagination from '../components/Pagination';
+import ShownPosts from "./ShownPosts";
+import ShowAllPosts from "./ShowAllPosts";
 
 export default class PostsList extends Component {
   constructor(props) {
@@ -13,8 +15,11 @@ export default class PostsList extends Component {
       startOfPagination: 0,
       endOfPagination: 10,
       currentPage: 1,
+      postsPerPage: 10,
+      totalPosts: 0,
     };
     this.handleCurrentPage = this.handleCurrentPage.bind(this);
+    this.showAllPosts = this.showAllPosts.bind(this);
   }
   
   handleCurrentPage(currentPage) {
@@ -25,12 +30,20 @@ export default class PostsList extends Component {
     })
   }
   
+  showAllPosts() {
+    this.setState({
+      startOfPagination: 0,
+      endOfPagination: this.state.totalPosts,
+      currentPage: 0,
+    })
+  }
+  
   render() {
     if ( !this.state.posts.length ) {
       return <Loader/>;
     }
-    
-    const posts = this.state.posts
+    const {posts, ...data} = this.state;
+    const selectedPosts = this.state.posts
       .filter((el, idx) => {
         return (
           idx >= this.state.startOfPagination
@@ -42,28 +55,18 @@ export default class PostsList extends Component {
     
     return (
       <div>
-        <h1>Посты &emsp;
-        
-        </h1>
+        <h1>Посты</h1>
         <div className="d-flex justify-content-between align-items-baseline">
-          <Pagination handleCurrentPage={ this.handleCurrentPage }
-                      total={ this.state.posts.length }
-                      currentPage={ this.state.currentPage }/>
-          <span>Shown: { this.state.startOfPagination + 1 } - { this.state.endOfPagination }</span>
-          <div className="page-item">
-            <a className="page-link"
-               onClick={() => this.setState({
-                 startOfPagination: 0,
-                 endOfPagination: this.state.posts.length,
-                 currentPage: 0,
-               })}
-            >Show all</a>
-          </div>
+          <Pagination handleCurrentPage={ this.handleCurrentPage } { ...data }/>
+          <ShownPosts { ...data }/>
+          <ShowAllPosts showAllPosts={this.showAllPosts}/>
         </div>
-        { posts }
-        <Pagination handleCurrentPage={ this.handleCurrentPage }
-                    total={ this.state.posts.length }
-                    currentPage={ this.state.currentPage }/>
+        { selectedPosts }
+        <div className="d-flex justify-content-between align-items-baseline">
+          <Pagination handleCurrentPage={ this.handleCurrentPage } { ...data }/>
+          <ShownPosts { ...data }/>
+          <ShowAllPosts showAllPosts={this.showAllPosts}/>
+        </div>
       </div>
     )
   }
@@ -73,6 +76,7 @@ export default class PostsList extends Component {
       .then(response => {
         this.setState({
           posts: response.data,
+          totalPosts: response.data.length,
         })
       })
     

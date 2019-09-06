@@ -4,9 +4,9 @@ class Pagination extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      totalPosts: this.props.total,
+      totalPosts: this.props.totalPosts,
       currentPage: this.props.currentPage,
-      postsPerPage: 10,
+      postsPerPage: this.props.postsPerPage,
       pagesCount: 0,
       pages: [],
     };
