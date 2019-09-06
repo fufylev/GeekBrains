@@ -65,7 +65,7 @@ class Pagination extends Component {
       pages.push(i)
     }
     this.setState({
-      pages: pages,
+      pages,
       pagesCount,
     });
     
